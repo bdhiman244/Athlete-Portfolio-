@@ -1,0 +1,224 @@
+:root {
+  --light-color: rgba(223, 230, 233, 0.8);
+  --cap-text: "Bellota Text", cursive;
+  --bold-text: "Plaster", cursive;
+  --red-color: rgba(214, 48, 49, 0.7);
+  --drak-color: #2d3436;
+}
+
+body {
+  background-color: #7f8c8d;
+  width: 1300px;
+  overflow-x: hidden;
+}
+
+.typo-animation-container {
+  position: absolute;
+  top: 245px;
+  left: 775px;
+  width: 560px;
+  transform: rotate(90deg);
+}
+.typo-animation-container h1 {
+  overflow: hidden;
+  position: relative;
+  font-family: "Plaster", cursive;
+  font-size: 150px;
+  color: #ecf0f1;
+  mix-blend-mode: difference;
+  height: 200px;
+  margin: 0;
+}
+.typo-animation-container h1 .hide-text {
+  position: absolute;
+  z-index: 100;
+  top: 195px;
+}
+
+.grid-container {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 350px 150px 350px;
+  grid-auto-rows: minmax(70px, auto);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 20px;
+  grid-template-areas: "text-one img-one img-one" ". img-one img-one" "indent indent indent" "img-two img-two text-two" "img-two img-two ." "indent-two indent-two indent-two" "resume resume resume" "resume resume resume";
+  justify-content: center;
+  transform: translateX(-100px);
+}
+
+.abadablam {
+  width: 500px;
+  height: 548px;
+  background-image: url(/imgsBw/abadablam.jpg);
+  background-size: cover;
+  grid-area: img-one;
+  justify-self: end;
+  position: relative;
+}
+
+.abadablam::after {
+  content: "The immaculate Ama Dablam captured during my 2018 thru-hike of the Great Himalayan Trail";
+  position: absolute;
+  width: 490px;
+  bottom: 0;
+  background-color: var(--light-color);
+  font-family: var(--cap-text);
+  font-size: 18px;
+  font-style: italic;
+  padding: 10px 5px;
+}
+
+.grid-text {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.grid-text-one {
+  grid-area: text-one;
+  align-self: start;
+  position: relative;
+}
+.grid-text-one p {
+  font-family: var(--cap-text);
+  color: var(--light-color);
+  font-size: 45px;
+  padding: 10px;
+}
+
+.hover-score {
+  transition: 0.5s ease-in;
+  -webkit-text-decoration: underline var(--red-color) wavy;
+          text-decoration: underline var(--red-color) wavy;
+}
+
+.indent {
+  height: 70px;
+  width: 870px;
+  background-color: transparent;
+  grid-area: indent;
+}
+
+.marquee {
+  width: 870px;
+  height: 150px;
+  grid-area: marquee;
+  text-transform: uppercase;
+  color: #ecf0f1;
+  -webkit-animation: slide 10s linear forwards;
+          animation: slide 10s linear forwards;
+}
+.marquee h1 {
+  font-family: var(--bold-text);
+  margin: 0;
+  font-size: 120px;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.placeholder-img {
+  width: 500px;
+  height: 543px;
+  background-image: url(/imgsBw/tetonselfieBW.jpg);
+  background-size: cover;
+  grid-area: img-two;
+  position: relative;
+}
+
+.placeholder-img::after {
+  content: "Wind spun and adrenalized on the summit of the Grand Teton, pausing for a 'proof-of-summit' photo before I bolted down with a round trip time of 4h2m.";
+  position: absolute;
+  width: 490px;
+  bottom: 0;
+  background-color: var(--light-color);
+  font-family: var(--cap-text);
+  font-size: 18px;
+  font-style: italic;
+  padding: 10px 5px;
+}
+
+.grid-text-two {
+  grid-area: text-two;
+  align-self: end;
+}
+.grid-text-two p {
+  font-family: var(--cap-text);
+  color: var(--light-color);
+  font-size: 25px;
+  padding: 10px;
+  text-align: right;
+}
+
+#text-two-subhead {
+  font-family: var(--cap-text);
+  color: var(--light-color);
+  font-size: 45px;
+  text-align: left;
+  font-size: 45px;
+}
+
+ul {
+  list-style: none;
+}
+
+.resume-container {
+  width: 870px;
+  height: 800px;
+  border: 1px solid red;
+  grid-area: resume;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hikes {
+  width: 420px;
+  height: 800px;
+  border: 1px solid green;
+}
+.hikes h1 {
+  font-family: "Bellota Text", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.runs {
+  width: 420px;
+  height: 800px;
+  border: 1px solid yellow;
+}
+.runs h1 {
+  font-family: "Bellota Text", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.runs ul {
+  list-style: none;
+}
+.runs ul li {
+  font-family: "Bellota Text", cursive;
+  font-style: italic;
+}
+.runs ul li .place {
+  font-family: "Bellota Text", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.place {
+  font-family: "Bellota Text", cursive;
+  font-weight: 700;
+}/*# sourceMappingURL=about.css.map */
