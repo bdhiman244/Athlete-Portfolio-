@@ -46,3 +46,48 @@ textBoxOne.addEventListener('mouseout', () => {
     
 });
 
+const runBody = document.querySelector(".runs");
+const hikeBody = document.querySelector(".hikes");
+const carrotBtn = document.querySelector(".carrot");
+const carrotBtnTwo = document.querySelector(".carrot-two");
+
+
+carrotBtnTwo.addEventListener('click', growBoxOne);
+
+    let clickCountOne = 0;
+    function growBoxOne(event) {
+        clickCountOne ++;
+
+    if (clickCountOne % 2 != 0) {
+        gsap.to(carrotBtnTwo, {
+            rotate: 540
+        });
+        hikeBody.style.height = 800 + 'px';
+    }
+    else {
+        hikeBody.style.height = 200 + 'px';
+       gsap.to(carrotBtnTwo, {
+            rotate: 360
+        });
+    }
+    }
+carrotBtn.addEventListener('click', growBox);
+
+    let clickCount = 0;
+    function growBox(event) {
+        clickCount ++;
+
+    if (clickCount % 2 != 0) {
+        gsap.to(carrotBtn, {
+            rotate: 540
+        });
+        runBody.style.height = 800 + 'px';
+    }
+    else {
+        runBody.style.height = 200 + 'px';
+       gsap.to(carrotBtn, {
+            rotate: 360
+        });
+    }
+    }
+
