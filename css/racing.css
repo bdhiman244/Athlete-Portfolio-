@@ -973,7 +973,7 @@ nav ul a {
   position: absolute;
   right: 17%;
   top: -20%;
-  -webkit-text-stroke: 1px #d63031;
+  -webkit-text-stroke: 0.5px #d63031;
 }
 .gtvo-container .gtvo-stats {
   position: absolute;
@@ -1243,6 +1243,7 @@ h2 {
   position: absolute;
   top: 60%;
   left: 70%;
+  cursor: pointer;
 }
 
 .gr-container {
@@ -1340,4 +1341,5 @@ h2 {
   background-size: cover;
   top: 250px;
   left: -200px;
-}/*# sourceMappingURL=circle-txt.css.map */
+  cursor: pointer;
+}/*# sourceMappingURL=racing.css.map */

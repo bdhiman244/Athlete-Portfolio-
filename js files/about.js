@@ -33,17 +33,48 @@ gsap.to(".hide-text", {
     ease: "slow"
 });
 
-const textBoxOne = document.querySelector(".grid-text-one");
-var underscore = document.getElementById("primal-underscore");
-var challenge = document.getElementById("challenges");
 
-textBoxOne.addEventListener('mouseover', () => {
-    underscore.classList.add("hover-score");
-  
+//nav
+const spinButton = document.querySelector(".animate-link");
+
+spinButton.addEventListener('mouseenter', () => {
+    gsap.to("#star-spin", {
+        duration: 0.5,
+        rotate: 360,
+        ease: 'power2.inOut'
+    })
+})
+spinButton.addEventListener('mouseleave', () => {
+    gsap.set("#star-spin", {
+        duration: 0.5,
+        rotate: 0,
+        ease: 'power2.inOut',
+        
+    })
 });
-textBoxOne.addEventListener('mouseout', () => {
-    underscore.classList.remove("hover-score")
-    
+
+
+const aboutTL = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".grid-container",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+        markers: false
+
+    }
+});
+
+const paraLayers = gsap.utils.toArray(".parallax");
+
+
+paraLayers.forEach(layer => {
+    const depth = layer.dataset.depth;
+    const movement = -(layer.offsetHeight * depth);
+    aboutTL.to(layer, {
+        y: movement,
+        ease: 'none'
+    }, 0)
 });
 
 const runBody = document.querySelector(".runs");
@@ -90,4 +121,9 @@ carrotBtn.addEventListener('click', growBox);
         });
     }
     }
+const footer = document.querySelector(".footer-container");
+const viewWidth = window.innerWidth;
 
+const newWidth = footer.style.width = viewWidth + 'px';
+
+console.log(newWidth);

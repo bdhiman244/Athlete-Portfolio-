@@ -3,29 +3,34 @@ gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline();
 
 
-tl.from(".hero-image", {duration: 3, opacity: 0, scale: 2, transformOrigin: 'right', ease: 'slow'});
+tl.from(".hero-image", {duration: 1.5, opacity: 0, scale: 2, transformOrigin: 'right', ease: 'slow'});
 
-tl.from(".hero-text", {duration: 1.5, y: -150, rotateY: 360, transformOrigin: 'left', opacity: "0", color: "#d63031", ease: "slow"}, "-=0.5");
-tl.from(".home-nav", {duration: 2, opacity: 0, y: 150, stagger: 0.25}, "-=1");
+tl.from(".hero-text", {duration: 1.2, y: -150, rotateY: 360, transformOrigin: 'left', opacity: "0", color: "#d63031", ease: "slow"}, "-=0.5");
+tl.from(".home-nav", {duration: 1.5, opacity: 0, y: 150, stagger: 0.25}, "-=1");
 tl.to(".domain-animation", {
     keyframes: {
-        "0%": { textContent: '' },
-        "10%": { textContent: 'DOMAIN', x: 5 },
-        "20%": { textContent: 'MOUNTAIN', x: 10 },
-        "30%": { textContent: 'DISTANCE', x: 15 },
-        "40%": { textContent: 'MID', x: 20 },
-        "50%": { textContent: 'MARATHON', x: 25 },
-        "60%": { textContent: 'ULTRA', x: 30 },
-        "70%": { textContent: 'STEEP', x: 35 },
-        "80%": { textContent: 'SALTY', x: 40 },
-        "90%": { textContent: 'SAVAGE', x: 45 },
+        "25%": { textContent: 'CONQUER', x: 10, rotateX: 360 },
+       
+        "50%": { textContent: 'THRU', x: 20, rotateX: -360 },
+       
+        "75%": { textContent: 'ENDURANCE', x: 30, rotateX: 360 },
+     
         "100%": { textContent: 'MTN RUNNER', x: 0 },
-        easeEach: 'slow'
+        easeEach: 'power4'
     },
-    duration: 3,
+    duration: 4,
     ease: "none"
-
 });
+
+// tl.to(".domain-animation", {
+//     keyframes: [
+//         {textContent: 'CONQUER', duration: 1, ease: 'sine.out'},
+//         {rotateX: 360, duration: 0.5, delay: -0.5},
+//         {textContent: 'THRU', duration: 2, ease: 'sine.out'},
+//         {textContent: 'ENDURANCE', duration: 3, ease: 'sine.out'}
+//     ],
+//     ease: 'expo.inOut'
+// });
 
 
 

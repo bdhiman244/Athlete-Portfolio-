@@ -448,7 +448,7 @@ $width: 7.21px;
     position: absolute;
     right: 17%;
     top: -20%;
-    -webkit-text-stroke: 1px #d63031;
+    -webkit-text-stroke: 0.5px #d63031;
   }
   .gtvo-stats {
     position: absolute;
@@ -728,6 +728,7 @@ h2 {
   position: absolute;
   top: 60%;
   left: 70%;
+  cursor: pointer;
 }
 
 //GR seciton
@@ -831,4 +832,5 @@ h2 {
   background-size: cover;
   top: 250px;
   left: -200px;
+  cursor: pointer;
 }
