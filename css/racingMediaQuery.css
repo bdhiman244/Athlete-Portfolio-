@@ -1,0 +1,40 @@
+@media (max-width: 480px) {
+  .panel-two {
+    width: 480px;
+  }
+
+  nav {
+    top: 20px;
+    left: -10px;
+  }
+
+  #chevron {
+    font-size: 70px;
+  }
+
+  .text-animation {
+    visibility: hidden;
+  }
+
+  .circle-text-container {
+    top: -380px;
+    left: -40px;
+  }
+
+  .section-title:nth-child(1) {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .section-title:nth-child(1) h1 {
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+  }
+  .section-title:nth-child(1) h1 .hide-text {
+    top: 180px;
+    position: absolute;
+    font-family: "Plaster", cursive;
+    font-size: 180px;
+    color: #ecf0f1;
+  }
+}/*# sourceMappingURL=racingMediaQuery.css.map */
