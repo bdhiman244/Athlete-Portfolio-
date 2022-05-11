@@ -127,3 +127,14 @@ const viewWidth = window.innerWidth;
 const newWidth = footer.style.width = viewWidth + 'px';
 
 console.log(newWidth);
+
+// const imgScrollTL = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".canfranc-profile-svg",
+//         start: "top top",
+//         end: "+=400px",
+//         toggleActions: "restart pause resume pause"
+//     }
+// });
+
+

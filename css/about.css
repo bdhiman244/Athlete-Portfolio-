@@ -159,7 +159,7 @@ nav a {
 
 .pic-three {
   position: absolute;
-  top: 250px;
+  top: 200px;
   right: -200px;
   width: 220px;
   height: 293px;
@@ -289,7 +289,7 @@ nav a {
   grid-area: quote;
   margin-top: 0;
   width: 700px;
-  height: 1030px;
+  height: 1200px;
   font-family: var(--typo-text);
   font-weight: 100;
   color: var(--light-color);

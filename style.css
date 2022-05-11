@@ -44,7 +44,7 @@
 .hero-nav {
   position: absolute;
   width: 80%;
-  margin-top: 45%;
+  top: 550px;
   margin-left: 2%;
   margin-right: 10%;
 }
@@ -71,7 +71,9 @@
 .hero-nav a:hover {
   transition: 0.2s ease-in;
   padding-bottom: 2px;
-  border-bottom: 3px dashed white;
+  border-top: 2px dashed #ecf0f1;
+  border-bottom: 2px dashed #ecf0f1;
+  /* -webkit-text-stroke: 1px #d63031; */
 }
 
 /* Racing Page */
