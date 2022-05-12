@@ -30,14 +30,20 @@ gsap.to(".whole-svg-two", {
   repeat: -1,
  
 });
+
 var timeDelay = 2000;
 
 
 
 $(window).on("load", function(){
     setTimeout(function(){
-        
     $(".pre-load-wrapper").fadeOut("slow");
+    gsap.to(".hide-text", {
+   
+    y: '-100%',
+    duration: 1.5,
+    ease: "slow"
+});
 }, timeDelay)
 });
 
@@ -69,12 +75,12 @@ gsap.set("skewElem", {
 });
 
 
-gsap.to(".hide-text", {
-    delay: 2.5,
-    y: '-100%',
-    duration: 1.5,
-    ease: "slow"
-});
+// gsap.to(".hide-text", {
+//     delay: 2.5,
+//     y: '-100%',
+//     duration: 1.5,
+//     ease: "slow"
+// });
 
 
 //nav
