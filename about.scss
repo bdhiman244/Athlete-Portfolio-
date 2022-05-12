@@ -20,6 +20,58 @@ body {
   margin: 0;
 }
 
+.preload {
+  overflow: hidden;
+}
+
+//preload
+.pre-load-wrapper {
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  height: 110%;
+  background-color: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100px);
+}
+
+#circlePath-two {
+  stroke-dasharray: 340 !important;
+  stroke-dashoffset: 340;
+  animation: dash 5s linear forwards infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 340;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.runner {
+  position: absolute;
+  font-size: 180px;
+  color: #d63031;
+  transform: translate(5px, 5px);
+}
+.runner-two {
+  position: absolute;
+  font-size: 180px;
+  color: #55efc4;
+  opacity: 0.7;
+  transform: translate(-5px, -5px);
+}
+.runner-three {
+  position: absolute;
+  font-size: 180px;
+  color: #fdcb6e;
+}
+//nav
+
 nav {
   position: absolute;
   top: 40px;
@@ -127,7 +179,7 @@ nav {
 }
 
 .abadablam::after {
-  content: "The immaculate Ama Dablam captured during my 2018 thru-hike of the Great Himalayan Trail";
+  content: "The immaculate Ama Dablam captured during my 2018 thru-hike of the Great Himalayan Trail.";
   position: absolute;
   width: 490px;
   bottom: 0;
@@ -173,56 +225,11 @@ nav {
   margin-right: 10px;
 }
 
-.pic-three {
-  position: absolute;
-  top: 200px;
-  right: -200px;
-  width: 220px;
-  height: 293px;
-  background-image: url(/images/middleteton.jpg);
-  background-size: cover;
-}
-.pic-four {
-  position: absolute;
-  top: 600px;
-  right: -200px;
-  width: 210px;
-  height: 294px;
-  background-image: url(/images/tashilabstatall.jpg);
-  background-size: cover;
-}
-
-.pic-three::after {
-  content: "03";
-  font-family: var(--typo-text);
-  font-size: 24px;
-  color: var(--drak-color);
-  margin-left: 10px;
-}
-.pic-four::after {
-  content: "04";
-  font-family: var(--typo-text);
-  font-size: 24px;
-  color: var(--light-color);
-  margin-left: 10px;
-}
-
 .caption-div {
   position: absolute;
   width: 200px;
   top: 800px;
   left: -230px;
-  font-family: var(--typo-text);
-  color: var(--drak-color);
-  font-size: 20px;
-  font-weight: 200;
-  text-align: left;
-}
-.caption-div-two {
-  position: absolute;
-  width: 200px;
-  top: 750px;
-  right: -200px;
   font-family: var(--typo-text);
   color: var(--drak-color);
   font-size: 20px;
@@ -254,7 +261,8 @@ nav {
   }
   #out-running {
     font-family: var(--typo-text);
-    font-weight: 400;
+    font-weight: 200;
+    font-style: italic;
   }
 }
 
@@ -307,7 +315,7 @@ nav {
   grid-area: quote;
   margin-top: 0;
   width: 700px;
-  height: 1200px;
+  height: 1100px;
   font-family: var(--typo-text);
   font-weight: 100;
   color: var(--light-color);
@@ -326,7 +334,7 @@ ul {
 .creed-container {
   grid-area: mission;
   width: 870px;
-  height: 950px;
+  height: 1100px;
   border-right: 2px dashed #ecf0f1;
   text-align: right;
   position: relative;
@@ -432,6 +440,55 @@ ul {
       }
     }
   }
+}
+.pic-three {
+  position: absolute;
+  top: -500px;
+  right: -220px;
+  width: 220px;
+  height: 293px;
+  background-image: url(/images/middleteton.jpg);
+  background-size: cover;
+}
+.pic-four {
+  position: absolute;
+  top: -150px;
+  right: -220px;
+  width: 210px;
+  height: 294px;
+  background-image: url(/images/tashilabstatall.jpg);
+  background-size: cover;
+}
+
+.pic-three::after {
+  content: "03";
+  font-family: var(--typo-text);
+  font-weight: 200;
+  font-size: 24px;
+  color: var(--drak-color);
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.pic-four::after {
+  content: "04";
+  font-family: var(--typo-text);
+  font-weight: 100;
+  font-size: 24px;
+  color: var(--light-color);
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.caption-div-two {
+  position: absolute;
+  width: 200px;
+  top: 100;
+  right: -220px;
+  font-family: var(--typo-text);
+  color: var(--drak-color);
+  font-size: 20px;
+  font-weight: 200;
+  text-align: left;
 }
 
 .hike-img-one {
@@ -540,7 +597,7 @@ ul {
   background-color: #2d3436;
   position: fixed;
   top: 100%;
-  transform: translate(90px);
+  transform: translate(100px);
   display: flex;
   flex-direction: row;
   justify-content: center;

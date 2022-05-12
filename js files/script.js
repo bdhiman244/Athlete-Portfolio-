@@ -1,9 +1,47 @@
-
 gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".runner", {
+  duration: 4.8,
+  rotateY: 360,
+  repeat: -1,
+  ease: "slow",
+
+  
+});
+
+gsap.to(".runner-two", {
+  duration: 4.7,
+  ease: "slow",
+  rotateY: 360,
+  repeat: -1
+});
+gsap.to(".runner-three", {
+  duration: 5,
+  ease: "slow",
+  rotateY: 360,
+  repeat: -1
+});
+
+gsap.to(".whole-svg-two", {
+  rotate: 360,
+  duration: 2,
+  repeat: -1,
+ 
+});
+var timeDelay = 2000;
+
+
+$(window).on("load", function(){
+    setTimeout(function(){
+    $(".pre-load-wrapper").fadeOut("slow");
+}, timeDelay)
+});
+
+
 var tl = gsap.timeline();
 
 
-tl.from(".hero-image", {duration: 1.5, opacity: 0, scale: 2, transformOrigin: 'right', ease: 'slow'});
+tl.from(".hero-image", {delay: 2, duration: 1.5, opacity: 0, scale: 2, transformOrigin: 'right', ease: 'slow'});
 
 tl.from(".hero-text", {duration: 1.2, y: -150, rotateY: 360, transformOrigin: 'left', opacity: "0", color: "#d63031", ease: "slow"}, "-=0.5");
 tl.from(".home-nav", {duration: 1.5, opacity: 0, y: 150, stagger: 0.25}, "-=1");

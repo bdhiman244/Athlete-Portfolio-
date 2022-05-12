@@ -20,6 +20,52 @@ body {
   margin: 0;
 }
 
+//preload
+.pre-load-wrapper {
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  background-color: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circlePath-two {
+  stroke-dasharray: 340 !important;
+  stroke-dashoffset: 340;
+  animation: dash 5s linear forwards infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 340;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.runner {
+  position: absolute;
+  font-size: 180px;
+  color: #d63031;
+  transform: translate(5px, 5px);
+}
+.runner-two {
+  position: absolute;
+  font-size: 180px;
+  color: #55efc4;
+  opacity: 0.7;
+  transform: translate(-5px, -5px);
+}
+.runner-three {
+  position: absolute;
+  font-size: 180px;
+  color: #fdcb6e;
+}
+
 nav {
   position: absolute;
   bottom: 100px;

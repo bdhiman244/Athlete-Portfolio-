@@ -1,4 +1,43 @@
 gsap.registerPlugin(ScrollTrigger);
+//preload
+
+gsap.to(".runner", {
+  duration: 4.8,
+  rotateY: 360,
+  repeat: -1,
+  ease: "slow",
+
+  
+});
+
+gsap.to(".runner-two", {
+  duration: 4.7,
+  ease: "slow",
+  rotateY: 360,
+  repeat: -1
+});
+gsap.to(".runner-three", {
+  duration: 5,
+  ease: "slow",
+  rotateY: 360,
+  repeat: -1
+});
+
+gsap.to(".whole-svg-two", {
+  rotate: 360,
+  duration: 2,
+  repeat: -1,
+ 
+});
+
+var timeDelay = 2000;
+
+$(window).on("load", function(){
+    setTimeout(function(){
+        
+    $(".pre-load-wrapper").fadeOut("slow");
+}, timeDelay)
+});
 
 const clusterPics = gsap.utils.toArray(".cluster-pic");
 
