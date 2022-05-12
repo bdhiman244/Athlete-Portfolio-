@@ -20,10 +20,6 @@ body {
   margin: 0;
 }
 
-.preload {
-  overflow: hidden;
-}
-
 .pre-load-wrapper {
   position: fixed;
   z-index: 1001;
@@ -511,7 +507,7 @@ ul {
 .caption-div-three {
   position: absolute;
   width: 200px;
-  top: 980px;
+  top: 950px;
   right: -220px;
   font-family: var(--typo-text);
   color: var(--drak-color);
@@ -591,6 +587,15 @@ ul {
   font-size: 25px;
   color: var(--light-color);
   text-decoration: none;
+}
+.footer-container #insta-logo {
+  position: absolute;
+  top: 125px;
+  left: 100px;
+  font-size: 80px;
+  color: rgba(236, 240, 241, 0.7);
+  z-index: 1000;
+  background-color: transparent;
 }
 .footer-container .selfie {
   margin-top: 20px;

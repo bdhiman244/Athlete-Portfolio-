@@ -1,17 +1,52 @@
 gsap.registerPlugin(ScrollTrigger);
 
+//preload
+
+gsap.to(".runner", {
+  duration: 4.8,
+  rotateY: 360,
+  repeat: -1,
+  ease: "slow",
+
+  
+});
+
+gsap.to(".runner-two", {
+  duration: 4.7,
+  ease: "slow",
+  rotateY: 360,
+  repeat: -1
+});
+gsap.to(".runner-three", {
+  duration: 5,
+  ease: "slow",
+  rotateY: 360,
+  repeat: -1
+});
+
+gsap.to(".whole-svg-two", {
+  rotate: 360,
+  duration: 2,
+  repeat: -1,
+ 
+});
+
+var timeDelay = 2000;
 var raceT = gsap.timeline();
 const hidddenText = document.querySelectorAll('.hide-text');
 const circleText = document.querySelector('.circle-text-container');
 const spinButton = document.querySelector('.animate-link');
 
-raceT.from(circleText, {
+$(window).on("load", function(){
+    setTimeout(function(){
+    $(".pre-load-wrapper").fadeOut("slow");
+    raceT.from(circleText, {
     opacity: 0,
     duration: 4,
     x: -1200,
     ease: 'bounce'
-});  
-    raceT.to(hidddenText, {
+}); 
+ raceT.to(hidddenText, {
     duration: 2,
     y: '-100%',
     ease: 'slow',
@@ -32,6 +67,11 @@ raceT.from(circleText, {
         yoyo: true,
         opacity: 0.7
     });
+}, timeDelay)
+});
+
+ 
+   
        
 
 

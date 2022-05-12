@@ -39,7 +39,6 @@ $(window).on("load", function(){
     setTimeout(function(){
     $(".pre-load-wrapper").fadeOut("slow");
     gsap.to(".hide-text", {
-   
     y: '-100%',
     duration: 1.5,
     ease: "slow"
