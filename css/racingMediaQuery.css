@@ -1,4 +1,12 @@
 @media (max-width: 480px) {
+  .whole-svg-two {
+    width: 200px;
+  }
+
+  .runner-icon {
+    font-size: 80px;
+  }
+
   .panel-two {
     width: 480px;
   }
@@ -21,20 +29,37 @@
     left: -40px;
   }
 
-  .section-title:nth-child(1) {
-    margin-left: 20px;
-    margin-top: 50px;
+  .gtvo-container {
+    display: none;
   }
-  .section-title:nth-child(1) h1 {
-    height: 160px;
-    overflow: hidden;
-    position: relative;
+
+  .gabizos-container {
+    display: none;
   }
-  .section-title:nth-child(1) h1 .hide-text {
-    top: 180px;
-    position: absolute;
-    font-family: "Plaster", cursive;
-    font-size: 180px;
+
+  .canfranc-container {
+    display: none;
+  }
+
+  .gr-container {
+    display: none;
+  }
+
+  .mq-bottom-nav-text {
+    margin-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
     color: #ecf0f1;
+    font-family: "Bellota Text", cursive;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1000px) {
+  .info-packet:nth-child(n+4) {
+    display: none;
+  }
+
+  .mq-bottom-nav-text {
+    display: none;
   }
 }/*# sourceMappingURL=racingMediaQuery.css.map */

@@ -788,7 +788,7 @@ nav ul a {
   list-style: none;
 }
 .info-packet ul li {
-  width: 90%;
+  width: 100%;
   font-family: "Bellota Text", cursive;
   font-style: italic;
   text-align: right;
@@ -1002,6 +1002,38 @@ nav ul a {
   width: 290px;
   height: 290px;
   background-image: url(/imgsBw/ridgelineBWthumb.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.img-thumbnail-four {
+  width: 290px;
+  height: 290px;
+  background-image: url(/images/mediaQuery/ossauBWthumb.png);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.img-thumbnail-five {
+  width: 290px;
+  height: 290px;
+  background-image: url(/images/mediaQuery/gabizosBWthumb.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.img-thumbnail-six {
+  width: 290px;
+  height: 290px;
+  background-image: url(/images/mediaQuery/mountainflankBWthumb.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.img-thumbnail-seven {
+  width: 290px;
+  height: 290px;
+  background-image: url(/images/mediaQuery/mafateBWthumb.jpg);
   background-size: cover;
   border-radius: 10px;
 }

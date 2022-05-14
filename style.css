@@ -121,18 +121,18 @@
   /* -webkit-text-stroke: 1px #d63031; */
 }
 
-/* Racing Page */
-
-.section-title {
-  font-family: var(--pop-font-fam);
-  color: var(--color-light);
-  font-size: 35px;
-}
-
 @media (max-width: 480px) {
   body {
     overflow: hidden;
     height: 100vh;
+  }
+
+  .whole-svg-two {
+    width: 200px;
+  }
+
+  .runner-icon {
+    font-size: 80px;
   }
 
   .hero-container {
@@ -156,14 +156,14 @@
   .hero-nav {
     width: 480px;
     height: 200px;
-    margin-top: -100px;
+    margin-top: -275px;
     margin-left: 10px;
     margin-right: 10px;
   }
 
   .hero-nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
   }
 

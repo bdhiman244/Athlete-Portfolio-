@@ -1,4 +1,12 @@
 @media (max-width: 480px) {
+  .whole-svg-two {
+    width: 200px;
+  }
+
+  .runner-icon {
+    font-size: 80px;
+  }
+
   .panel-two {
     width: 480px;
   }
@@ -19,24 +27,37 @@
     top: -380px;
     left: -40px;
   }
+  .gtvo-container {
+    display: none;
+  }
 
-  .section-title:nth-child(1) {
-    margin-left: 20px;
-    margin-top: 50px;
+  .gabizos-container {
+    display: none;
+  }
+  .canfranc-container {
+    display: none;
+  }
 
-    h1 {
-      height: 160px;
-      overflow: hidden;
-      position: relative;
-      // background-color: red;
+  .gr-container {
+    display: none;
+  }
 
-      .hide-text {
-        top: 180px;
-        position: absolute;
-        font-family: "Plaster", cursive;
-        font-size: 180px;
-        color: #ecf0f1;
-      }
-    }
+  .mq-bottom-nav-text {
+    margin-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-family: "Bellota Text", cursive;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .info-packet:nth-child(n + 4) {
+    display: none;
+  }
+
+  .mq-bottom-nav-text {
+    display: none;
   }
 }
