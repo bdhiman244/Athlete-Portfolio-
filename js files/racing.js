@@ -40,6 +40,7 @@ const spinButton = document.querySelector('.animate-link');
 $(window).on("load", function(){
     setTimeout(function(){
     $(".pre-load-wrapper").fadeOut("slow");
+    $("body").removeClass("preload");
     raceT.from(circleText, {
     opacity: 0,
     duration: 4,

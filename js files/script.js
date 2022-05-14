@@ -34,6 +34,7 @@ var timeDelay = 2000;
 $(window).on("load", function(){
     setTimeout(function(){
     $(".pre-load-wrapper").fadeOut("slow");
+    $("body").removeClass("preload");
 }, timeDelay)
 });
 

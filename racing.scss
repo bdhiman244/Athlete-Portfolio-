@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.preload {
+  overflow: hidden;
+}
+
 .pre-load-wrapper {
   position: fixed;
   z-index: 1001;
@@ -292,7 +296,7 @@ $width: 7.21px;
     list-style: none;
 
     li {
-      width: 100%;
+      width: 90%;
       font-family: "Bellota Text", cursive;
       font-style: italic;
       text-align: right;

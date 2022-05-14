@@ -29,6 +29,10 @@
     left: -40px;
   }
 
+  .info-packet {
+    margin-left: 10px;
+  }
+
   .gtvo-container {
     display: none;
   }
@@ -46,12 +50,13 @@
   }
 
   .mq-bottom-nav-text {
-    margin-top: 25px;
+    margin-top: 50px;
     cursor: pointer;
     text-decoration: none;
     color: #ecf0f1;
     font-family: "Bellota Text", cursive;
     font-size: 25px;
+    z-index: 2000;
   }
 }
 @media (min-width: 1000px) {

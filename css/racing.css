@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+.preload {
+  overflow: hidden;
+}
+
 .pre-load-wrapper {
   position: fixed;
   z-index: 1001;
@@ -788,7 +792,7 @@ nav ul a {
   list-style: none;
 }
 .info-packet ul li {
-  width: 100%;
+  width: 90%;
   font-family: "Bellota Text", cursive;
   font-style: italic;
   text-align: right;

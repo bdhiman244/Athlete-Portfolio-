@@ -12,6 +12,10 @@
   --color-red: #d63031;
 }
 
+.preload {
+  overflow: hidden;
+}
+
 .pre-load-wrapper {
   position: fixed;
   z-index: 1001;
