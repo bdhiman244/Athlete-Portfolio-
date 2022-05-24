@@ -74,13 +74,6 @@ gsap.set("skewElem", {
 });
 
 
-// gsap.to(".hide-text", {
-//     delay: 2.5,
-//     y: '-100%',
-//     duration: 1.5,
-//     ease: "slow"
-// });
-
 
 //nav
 const spinButton = document.querySelector(".animate-link");
@@ -100,6 +93,8 @@ spinButton.addEventListener('mouseleave', () => {
         
     })
 });
+
+const viewWidth = window.innerWidth;
 
 
 const aboutTL = gsap.timeline({
@@ -141,7 +136,7 @@ carrotBtnTwo.addEventListener('click', growBoxOne);
         gsap.to(carrotBtnTwo, {
             rotate: 540
         });
-        hikeBody.style.height = 800 + 'px';
+        hikeBody.style.height = 850 + 'px';
     }
     else {
         hikeBody.style.height = 200 + 'px';
@@ -160,7 +155,7 @@ carrotBtn.addEventListener('click', growBox);
         gsap.to(carrotBtn, {
             rotate: 540
         });
-        runBody.style.height = 800 + 'px';
+        runBody.style.height = 820 + 'px';
     }
     else {
         runBody.style.height = 200 + 'px';
@@ -170,19 +165,6 @@ carrotBtn.addEventListener('click', growBox);
     }
     }
 const footer = document.querySelector(".footer-container");
-const viewWidth = window.innerWidth;
 
-const newWidth = footer.style.width = viewWidth + 'px';
-
-console.log(newWidth);
-
-// const imgScrollTL = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: ".canfranc-profile-svg",
-//         start: "top top",
-//         end: "+=400px",
-//         toggleActions: "restart pause resume pause"
-//     }
-// });
 
 

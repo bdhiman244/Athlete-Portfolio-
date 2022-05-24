@@ -48,11 +48,11 @@ tl.from(".hero-text", {duration: 1.2, y: -150, rotateY: 360, transformOrigin: 'l
 tl.from(".home-nav", {duration: 1.5, opacity: 0, y: 150, stagger: 0.25}, "-=1");
 tl.to(".domain-animation", {
     keyframes: {
-        "25%": { textContent: 'CONQUER', x: 10, rotateX: 360 },
+        "25%": { textContent: 'RELENTLESS', x: 10, rotateX: 360 },
        
-        "50%": { textContent: 'THRU', x: 20, rotateX: -360 },
+        "50%": { textContent: 'UPHILL', x: 20, rotateX: -360 },
        
-        "75%": { textContent: 'ENDURANCE', x: 30, rotateX: 360 },
+        "75%": { textContent: 'PURSUIT', x: 30, rotateX: 360 },
      
         "100%": { textContent: 'MTN RUNNER', x: 0 },
         easeEach: 'power4'

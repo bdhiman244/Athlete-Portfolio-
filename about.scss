@@ -86,6 +86,20 @@ nav {
   color: var(--light-color);
 }
 
+.mobile-title {
+  visibility: hidden;
+  font-family: var(--bold-text);
+  color: var(--light-color);
+  font-size: 120px;
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  left: 10px;
+  text-transform: uppercase;
+  line-height: 75%;
+  border-radius: 10px;
+}
+
 .typo-animation-container {
   position: absolute;
   top: 520px;
@@ -252,8 +266,6 @@ nav {
 
   #dictionary {
     font-family: "EB Garamond", serif;
-    // text-decoration: 0.5px underline;
-    // text-underline-offset: 5px;
   }
   #out-running {
     font-family: var(--typo-text);

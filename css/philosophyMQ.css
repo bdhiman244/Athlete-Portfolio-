@@ -1,0 +1,252 @@
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .pre-load-wrapper {
+    position: fixed;
+    transform: translateY(-400px);
+  }
+  .whole-svg-two {
+    width: 200px;
+  }
+
+  .runner-icon {
+    font-size: 80px;
+  }
+
+  nav {
+    top: 30px;
+    left: 250px;
+  }
+
+  .mobile-title {
+    visibility: visible;
+  }
+
+  .grid-container {
+    margin-top: 380px;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-auto-rows: minmax(50px, auto);
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-areas:
+      "quote"
+      "img-one"
+      "text-one"
+      "img-two"
+      "text-two"
+      "mission"
+      "resume"
+      "resume"
+      "testing";
+    justify-content: left;
+    transform: translateX(0px);
+  }
+
+  .grid-quote {
+    width: 300px;
+    height: auto;
+    font-size: 30px;
+    margin-left: 50px;
+    justify-self: start;
+    padding-right: 10px;
+    border-right: 1px dashed #ecf0f1;
+  }
+
+  .abadablam {
+    width: 350px;
+    height: 383.6px;
+    grid-area: img-one;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+
+  .abadablam::after {
+    display: none;
+  }
+
+  .grid-text {
+    width: 350px;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .grid-text-one {
+    color: black;
+    font-size: 26px;
+    padding: 0px;
+    width: 80%;
+    margin-top: -350px;
+    margin-left: 25px;
+  }
+  .placeholder-img {
+    margin-top: -100px;
+    width: 350px;
+    height: 380px;
+    margin-left: 20px;
+  }
+
+  .placeholder-img::after {
+    display: none;
+  }
+  .grid-text-two {
+    font-size: 25px;
+    padding: 0px;
+    font-weight: 200;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .creed-container {
+    margin-top: -250px;
+    grid-area: mission;
+    width: 350px;
+    height: auto;
+    border-right: 1px dashed #ecf0f1;
+    text-align: right;
+    position: relative;
+  }
+
+  .creed-container h1 {
+    font-size: 35px;
+  }
+  .creed-container p {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .creed-container ul li {
+    font-family: var(--typo-text);
+    font-weight: 100;
+    font-size: 25px;
+    color: var(--light-color);
+    margin: 20px 0;
+  }
+  .creed-container ul li .precept {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+  .resume-container {
+    width: 350px;
+    margin-left: 20px;
+  }
+
+  .runs h1 {
+    font-size: 30px;
+  }
+
+  .runs ul li .year {
+    font-size: 19px;
+  }
+
+  .runs ul li {
+    font-size: 17px;
+  }
+  .hikes h1 {
+    font-size: 30px;
+  }
+
+  .hikes ul li .year {
+    font-size: 19px;
+  }
+
+  .hikes ul li {
+    font-size: 17px;
+  }
+
+  .pic-one {
+    position: absolute;
+    z-index: -100;
+    top: -170px;
+    left: 180px;
+    width: 150px;
+    height: 207.75px;
+  }
+  .pic-one::after {
+    content: "";
+  }
+  .pic-two {
+    position: absolute;
+    z-index: -100;
+    top: 400px;
+    left: -50px;
+    width: 210px;
+    height: 294px;
+    background-image: url(/images/tashilabstatall.jpg);
+  }
+  .pic-two::after {
+    content: "";
+  }
+  .pic-three {
+    display: none;
+  }
+  .pic-four {
+    display: none;
+  }
+  .caption-div {
+    display: none;
+  }
+  .caption-div-two {
+    display: none;
+  }
+  .caption-div-three {
+    display: none;
+  }
+
+  .hike-img-one {
+    position: absolute;
+    z-index: -99;
+    top: 600px;
+    left: 0;
+    width: 200px;
+    height: 267px;
+  }
+  .hike-img-one::after {
+    content: "";
+  }
+  .hike-img-two {
+    display: none;
+  }
+  .footer-container {
+    height: 350px;
+    width: 100%;
+    background-color: #2d3436;
+    position: fixed;
+    top: 100%;
+    transform: translate(0px);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-grow: 0;
+  }
+  .footer-container h1 {
+    visibility: hidden;
+  }
+  .footer-container .selfie {
+    margin-top: 0;
+    margin-left: 0;
+    width: 200px;
+    height: 252px;
+    background-image: url(/images/selfiesnow.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    border-radius: 10px;
+  }
+  .footer-container .selfie::after {
+    content: "";
+  }
+  .footer-container #insta-logo {
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    font-size: 50px;
+    color: rgba(236, 240, 241, 0.7);
+    z-index: 1000;
+    background-color: transparent;
+  }
+}
