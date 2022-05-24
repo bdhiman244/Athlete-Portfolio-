@@ -30,7 +30,7 @@ gsap.to(".whole-svg-two", {
  
 });
 
-var timeDelay = 2000;
+var timeDelay = 1000;
 
 $(window).on("load", function(){
     setTimeout(function(){

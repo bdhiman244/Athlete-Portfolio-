@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const viewWidth = window.innerWidth;
 //preload
 
 gsap.to(".runner", {
@@ -31,7 +32,7 @@ gsap.to(".whole-svg-two", {
  
 });
 
-var timeDelay = 2000;
+var timeDelay = 1000;
 
 
 
@@ -40,7 +41,7 @@ $(window).on("load", function(){
     $(".pre-load-wrapper").fadeOut("slow");
     gsap.to(".hide-text", {
     y: '-100%',
-    duration: 1.5,
+    duration: 1,
     ease: "slow"
 });
 }, timeDelay)
@@ -94,8 +95,6 @@ spinButton.addEventListener('mouseleave', () => {
     })
 });
 
-const viewWidth = window.innerWidth;
-
 
 const aboutTL = gsap.timeline({
     scrollTrigger: {
@@ -108,9 +107,11 @@ const aboutTL = gsap.timeline({
     }
 });
 
-const paraLayers = gsap.utils.toArray(".parallax");
+var paraLayers = gsap.utils.toArray(".parallax");
 
-
+if(viewWidth < 480 ) {
+    paraLayers = null;
+} else { 
 paraLayers.forEach(layer => {
     const depth = layer.dataset.depth;
     const movement = -(layer.offsetHeight * depth);
@@ -119,6 +120,7 @@ paraLayers.forEach(layer => {
         ease: 'none'
     }, 0)
 });
+}
 
 const runBody = document.querySelector(".runs");
 const hikeBody = document.querySelector(".hikes");

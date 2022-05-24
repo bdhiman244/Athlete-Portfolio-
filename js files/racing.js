@@ -31,7 +31,7 @@ gsap.to(".whole-svg-two", {
  
 });
 
-var timeDelay = 2000;
+var timeDelay = 1000;
 var raceT = gsap.timeline();
 const hidddenText = document.querySelectorAll('.hide-text');
 const circleText = document.querySelector('.circle-text-container');
