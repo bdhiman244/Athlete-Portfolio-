@@ -1560,4 +1560,16 @@ h2 {
   top: 250px;
   left: -200px;
   cursor: pointer;
+}
+
+@media (hover: none) {
+  .bagnere-classic .winner {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hautacam-trails .winner-two {
+    opacity: 1;
+    visibility: visible;
+  }
 }/*# sourceMappingURL=racing.css.map */
