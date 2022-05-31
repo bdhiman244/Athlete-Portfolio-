@@ -78,8 +78,8 @@ body {
 
 nav {
   position: absolute;
-  bottom: 100px;
-  left: 1000px;
+  top: 0px;
+  left: 600px;
   width: 95%;
   z-index: 100;
 }
@@ -103,11 +103,10 @@ nav ul a {
 }
 
 .textbox {
-  position: relative;
-  top: 110px;
-  left: 600px;
-  width: 550px;
-  height: 320px;
+  grid-area: 1/1/2/2;
+  margin-top: 300px;
+  margin-left: 10px;
+  width: 90%;
   background-color: rgba(223, 230, 233, 0.8);
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -133,57 +132,79 @@ nav ul a {
 
 .headline {
   position: absolute;
-  top: 0px;
-  left: 810px;
+  top: 10px;
+  left: 200px;
   font-family: var(--bold-text);
-  font-size: 95px;
+  font-size: 150px;
   color: rgb(223, 230, 233);
   text-transform: uppercase;
+  line-height: 0.8;
+  letter-spacing: -5px;
+  -webkit-text-stroke: 0.5px #2d3436;
+}
+
+.headline-pic {
+  width: 340px;
+  height: 251px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+}
+
+.grid-container {
+  margin-top: 0px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  width: 100%;
+}
+
+.cluster-container {
+  grid-area: 1/2/2/3;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .pic-one {
-  position: absolute;
-  top: 210px;
-  left: 50px;
   background-image: url(/images/cluster/bctRCluster.jpg);
   background-size: cover;
   width: 300px;
-  height: 360px;
-  z-index: 5;
+  height: 330px;
   border-radius: 10px;
   transition: 0.25s ease-in-out;
+  flex-shrink: 1;
 }
 
 .pic-two {
-  position: absolute;
-  top: 10px;
-  left: 250px;
+  margin-top: 20px;
   background-image: url(/images/cluster/HL100finishCluster.jpeg);
   background-size: cover;
   width: 300px;
-  height: 358px;
-  z-index: 4;
+  height: 330px;
   border-radius: 10px;
   transition: 0.25s ease-in-out;
+  flex-shrink: 1;
 }
 
 .pic-three {
-  position: absolute;
-  top: 325px;
-  left: 300px;
   background-image: url(/images/cluster/reunionCluster.jpg);
   background-size: cover;
-  width: 350px;
+  width: 220px;
   height: 251px;
-  z-index: 0;
   border-radius: 10px;
   transition: 0.25s ease-in-out;
 }
 
 .pic-four {
-  position: absolute;
-  top: 10px;
-  left: 35px;
   background-image: url(/images/cluster/finsishfamilyCluster.jpg);
   background-size: cover;
   width: 220px;
@@ -191,32 +212,4 @@ nav ul a {
   z-index: 2;
   border-radius: 10px;
   transition: 0.25s ease-in-out;
-}
-
-.pic-one:hover {
-  z-index: 20;
-  width: 360px;
-  height: 432px;
-  opacity: 1;
-}
-
-.pic-two:hover {
-  z-index: 20;
-  width: 360px;
-  height: 429px;
-  opacity: 1;
-}
-
-.pic-three:hover {
-  z-index: 20;
-  width: 420px;
-  height: 301px;
-  opacity: 1;
-}
-
-.pic-four:hover {
-  z-index: 20;
-  width: 286px;
-  height: 448px;
-  opacity: 1;
 }/*# sourceMappingURL=contact.css.map */

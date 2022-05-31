@@ -67,3 +67,14 @@
     display: none;
   }
 }
+
+@media (hover: none) {
+  .bagnere-classic .winner {
+    opacity: 1;
+    visibility: visible;
+  }
+  .hautacam-trails .winner-two {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -309,47 +309,93 @@ $width: 7.21px;
   position: relative;
 }
 
+.hautacam-trails {
+  position: relative;
+}
+
 .winner {
   position: absolute;
-  background: rgb(214, 48, 49);
-  background: linear-gradient(
-    324deg,
-    rgba(214, 48, 49, 1) 20%,
-    rgba(108, 92, 231, 1) 100%
-  );
+  background-color: rgba(223, 230, 233, 0.6);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   top: 0;
   left: 0;
-  width: 350px;
-  height: 480px;
-  border-radius: 10px;
+  width: 290px;
+  height: 150px;
   text-align: center;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s ease-in;
 
   .trophy {
-    margin-top: 80px;
+    margin-top: 150px;
+    margin-left: 90px;
     font-size: 80px;
-    color: #ecf0f1;
-    background-color: transparent;
+    color: #f6e58d;
   }
 
   h3 {
+    position: absolute;
+    top: -35px;
+    left: 60px;
     font-family: "Bellota Text", cursive;
     font-weight: 700;
-    font-size: 45px;
-    color: #ecf0f1;
-
+    font-size: 35px;
+    color: #2f3640;
     #course-rec {
       font-family: "Bellota Text", cursive;
       font-weight: 700;
-      color: #ecf0f1;
+      color: #2f3640;
       font-size: 25px;
     }
   }
 }
 
 .bagnere-classic:hover .winner {
+  opacity: 1;
+  visibility: visible;
+}
+
+.winner-two {
+  position: absolute;
+  background-color: rgba(223, 230, 233, 0.6);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 150px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in;
+
+  .trophy-two {
+    margin-top: 150px;
+    margin-left: 90px;
+    font-size: 80px;
+    color: #f6e58d;
+  }
+
+  h3 {
+    position: absolute;
+    top: -35px;
+    left: 60px;
+    font-family: "Bellota Text", cursive;
+    font-weight: 700;
+    font-size: 35px;
+    color: #2f3640;
+
+    #course-rec-two {
+      font-family: "Bellota Text", cursive;
+      font-weight: 700;
+      color: #2f3640;
+      font-size: 25px;
+    }
+  }
+}
+
+.hautacam-trails:hover .winner-two {
   opacity: 1;
   visibility: visible;
 }

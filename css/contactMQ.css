@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+  .pre-load-wrapper {
+    position: fixed;
+    transform: translateY(-400px);
+  }
+  .whole-svg-two {
+    width: 200px;
+  }
+
+  .runner-icon {
+    font-size: 80px;
+  }
+
+  nav {
+    top: 0px;
+    left: 0px;
+  }
+}

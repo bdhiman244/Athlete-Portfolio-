@@ -17,7 +17,13 @@ body {
   background-color: #7f8c8d;
   width: 1300px;
   overflow-x: hidden;
+  overflow-y: scroll !important;
   margin: 0;
+}
+
+.page-wrapper {
+  position: relative;
+  overflow-x: hidden;
 }
 
 .pre-load-wrapper {
