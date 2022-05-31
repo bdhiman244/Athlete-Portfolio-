@@ -1,4 +1,9 @@
 @media (max-width: 480px) {
+  .pre-load-wrapper {
+    width: 150%;
+    height: 150%;
+    transform: translate(-25%, -25%);
+  }
   .whole-svg-two {
     width: 200px;
   }
@@ -26,6 +31,15 @@
   .circle-text-container {
     top: -380px;
     left: -40px;
+  }
+
+  .bagnere-classic .winner {
+    opacity: 1;
+    visibility: visible;
+  }
+  .hautacam-trails .winner-two {
+    opacity: 1;
+    visibility: visible;
   }
 
   .info-packet {
@@ -65,16 +79,5 @@
 
   .mq-bottom-nav-text {
     display: none;
-  }
-}
-
-@media (hover: none) {
-  .bagnere-classic .winner {
-    opacity: 1;
-    visibility: visible;
-  }
-  .hautacam-trails .winner-two {
-    opacity: 1;
-    visibility: visible;
   }
 }
