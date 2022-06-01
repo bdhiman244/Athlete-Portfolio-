@@ -12,13 +12,13 @@ gsap.to(".runner", {
 });
 
 gsap.to(".runner-two", {
-  duration: 4.7,
+  duration: 4.78,
   ease: "slow",
   rotateY: 360,
   repeat: -1
 });
 gsap.to(".runner-three", {
-  duration: 5,
+  duration: 4.82,
   ease: "slow",
   rotateY: 360,
   repeat: -1

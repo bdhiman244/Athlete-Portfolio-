@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const viewWidth = window.innerWidth;
+
 //preload
 
 gsap.to(".runner", {
@@ -13,13 +13,13 @@ gsap.to(".runner", {
 });
 
 gsap.to(".runner-two", {
-  duration: 4.7,
+  duration: 4.78,
   ease: "slow",
   rotateY: 360,
   repeat: -1
 });
 gsap.to(".runner-three", {
-  duration: 5,
+  duration: 4.82,
   ease: "slow",
   rotateY: 360,
   repeat: -1
@@ -108,10 +108,12 @@ const aboutTL = gsap.timeline({
 });
 
 var paraLayers = gsap.utils.toArray(".parallax");
-
-if(viewWidth < 480 ) {
-    paraLayers = null;
+const viewWidth = window.innerWidth;
+console.log(viewWidth);
+if(viewWidth < 500 ) {
+    console.log("mobile");
 } else { 
+    console.log("notmobile");
 paraLayers.forEach(layer => {
     const depth = layer.dataset.depth;
     const movement = -(layer.offsetHeight * depth);
