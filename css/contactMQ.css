@@ -5,8 +5,9 @@
 }
 @media (max-width: 480px) {
   .pre-load-wrapper {
-    position: fixed;
-    transform: translateY(-400px);
+    width: 150%;
+    height: 150%;
+    transform: translate(-25%, -50%);
   }
   .whole-svg-two {
     width: 200px;
@@ -17,8 +18,8 @@
   }
 
   nav {
-    top: 290%;
-    left: 130px;
+    top: 1800px;
+    left: 100px;
   }
 
   .headline {
@@ -34,7 +35,7 @@
     border-radius: 10px;
     position: absolute;
     top: 10px;
-    left: 65px;
+    left: 25px;
     z-index: -1;
   }
 
@@ -82,7 +83,7 @@
 
   .mobile-container .large-font {
     font-family: "Roboto Slab", serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
     color: rgba(223, 230, 233, 1);
   }
