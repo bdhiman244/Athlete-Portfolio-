@@ -60,6 +60,12 @@ tl.to(".domain-animation", {
     duration: 4,
     ease: "none"
 });
+tl.from(".marquee-container", {
+  duration: 1,
+  opacity: 0,
+  x: 600,
+  ease: 'power2'
+}, "-=1.5");
 
 const height = window.innerHeight;
 function heightAdjust () {
@@ -69,4 +75,5 @@ function heightAdjust () {
 }
 heightAdjust();
 //figure out screen resize function to make this update on change
+
 

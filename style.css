@@ -90,20 +90,100 @@
   font-size: 35px;
 }
 
+.marquee-container {
+  position: absolute;
+  left: 415px;
+  top: 30px;
+  height: 45px;
+  width: 600px;
+  background-color: rgba(45, 52, 54, 0.8);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.marquee-container #marquee-text {
+  letter-spacing: 2.5px;
+  padding-top: 5px;
+  padding-left: 100%;
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  color: #ecf0f1;
+  font-size: 28px;
+  white-space: nowrap;
+  animation: marquee 40s infinite linear;
+}
+
+.marquee-container .subhead-text {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.marquee-container sup {
+  font-size: 16px;
+}
+
+.marquee-container #marquee-text:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .latest-results-box {
   position: absolute;
   left: 20px;
   top: 250px;
   height: 200px;
-  width: 250px;
+  width: 400px;
   background-color: #ecf0f1;
   border-radius: 15px;
+  visibility: hidden;
 }
-.latest-results-box h5 {
-  text-align: center;
+.latest-botton {
+  position: absolute;
+  cursor: pointer;
+  top: 215px;
+  left: 40px;
   font-family: "Roboto Slab", serif;
+  color: #2f3640;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 5px 20px;
+  background-color: #ecf0f1;
+  z-index: 100;
+}
+
+.latest-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.latest-content h3 {
+  margin-top: 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.latest-content p {
+  margin-top: 0px;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.latest-content p:hover {
+  font-size: 18.5px;
+  font-weight: 200;
+  cursor: pointer;
 }
 
 .hero-nav {
@@ -196,5 +276,16 @@
 
   .hero-nav li {
     margin-top: 20px;
+  }
+
+  .marquee-container {
+    position: absolute;
+    left: 0px;
+    top: 210px;
+    height: 45px;
+    width: 600px;
+    background-color: rgba(45, 52, 54, 0.8);
+    z-index: 1000;
+    overflow: hidden;
   }
 }
