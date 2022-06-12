@@ -118,9 +118,9 @@ nav ul a {
   text-align: left;
 }
 .textbox .align-right {
-  text-align: right;
+  text-align: center;
   margin-top: 10px;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 .textbox .align-center {
   margin-top: 50px;

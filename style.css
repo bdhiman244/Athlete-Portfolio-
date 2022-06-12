@@ -12,6 +12,11 @@
   --color-red: #d63031;
 }
 
+.page-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .preload {
   overflow: hidden;
 }
