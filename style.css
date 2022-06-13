@@ -151,45 +151,6 @@
   border-radius: 15px;
   visibility: hidden;
 }
-.latest-botton {
-  position: absolute;
-  cursor: pointer;
-  top: 215px;
-  left: 40px;
-  font-family: "Roboto Slab", serif;
-  color: #2f3640;
-  font-weight: 100;
-  font-size: 30px;
-  border-radius: 15px;
-  padding: 5px 20px;
-  background-color: #ecf0f1;
-  z-index: 100;
-}
-
-.latest-content {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.latest-content h3 {
-  margin-top: 10px;
-  font-family: "Roboto Slab", serif;
-  font-size: 22px;
-  font-weight: 200;
-}
-
-.latest-content p {
-  margin-top: 0px;
-  font-family: "Roboto Slab", serif;
-  font-size: 18px;
-  font-weight: 100;
-}
-
-.latest-content p:hover {
-  font-size: 18.5px;
-  font-weight: 200;
-  cursor: pointer;
-}
 
 .hero-nav {
   position: absolute;
@@ -200,7 +161,6 @@
 }
 
 .hero-nav ul {
-  position: relative;
   display: flex;
   width: 100%;
   justify-content: space-between;
