@@ -3,6 +3,7 @@
     width: 150%;
     height: 150%;
     transform: translate(-25%, -25%);
+    display: none;
   }
 
   .whole-svg-two {
