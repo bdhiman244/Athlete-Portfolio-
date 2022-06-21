@@ -313,6 +313,10 @@ $width: 7.21px;
   position: relative;
 }
 
+.patou-skyrace {
+  position: relative;
+}
+
 .winner {
   position: absolute;
   background-color: rgba(223, 230, 233, 0.6);
@@ -394,8 +398,43 @@ $width: 7.21px;
     }
   }
 }
+.winner-three {
+  position: absolute;
+  background-color: rgba(223, 230, 233, 0.6);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 150px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in;
+
+  .trophy-three {
+    margin-top: 150px;
+    margin-left: 90px;
+    font-size: 80px;
+    color: #bdc3c7;
+  }
+
+  h3 {
+    position: absolute;
+    top: -15px;
+    left: 110px;
+    font-family: "Bellota Text", cursive;
+    font-weight: 700;
+    font-size: 35px;
+    color: #2f3640;
+  }
+}
 
 .hautacam-trails:hover .winner-two {
+  opacity: 1;
+  visibility: visible;
+}
+.patou-skyrace:hover .winner-three {
   opacity: 1;
   visibility: visible;
 }

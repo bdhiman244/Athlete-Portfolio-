@@ -1,6 +1,6 @@
-:root {
-  --light-color: rgba(223, 230, 233, 1);
-  --cap-text: "Bellota Text", cursive;
+body {
+  background-color: #7f8c8d;
+}/*# sourceMappingURL=about.css.map */xt", cursive;
   --bold-text: "Plaster", cursive;
   --typo-text: "Roboto Slab", serif;
   --red-color: rgba(214, 48, 49, 0.7);
