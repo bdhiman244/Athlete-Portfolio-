@@ -32,12 +32,43 @@ gsap.to(".whole-svg-two", {
 });
 
 var timeDelay = 1000;
+var screenWidth = window.innerWidth;
 var raceT = gsap.timeline();
 const hidddenText = document.querySelectorAll('.hide-text');
 const circleText = document.querySelector('.circle-text-container');
 const spinButton = document.querySelector('.animate-link');
 
-$(window).on("load", function(){
+if(screenWidth < 500 ){
+    $("body").removeClass("preload");
+    raceT.from(circleText, {
+    opacity: 0,
+    duration: 4,
+    x: -1200,
+    ease: 'bounce'
+}); 
+ raceT.to(hidddenText, {
+    duration: 2,
+    y: '-100%',
+    ease: 'slow',
+    stagger: {
+        each: 0.7
+    }
+}, '-=70%');
+    raceT.from('#chevron', {
+        duration: 1,
+        y: -200,
+        opacity: 0,
+        ease: 'power.inOut'
+    }, '-=2');
+    raceT.to('#chevron', {
+        duration: 1,
+        y: -50,
+        repeat: -1,
+        yoyo: true,
+        opacity: 0.7
+    });
+} else {
+   $(window).on("load", function(){
     setTimeout(function(){
     $(".pre-load-wrapper").fadeOut("slow");
     $("body").removeClass("preload");
@@ -70,11 +101,7 @@ $(window).on("load", function(){
     });
 }, timeDelay)
 });
-
- 
-   
-       
-
+}
 
     gsap.from(spinButton, {
             delay: 4,
