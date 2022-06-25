@@ -1,7 +1,7 @@
-body {
-  background-color: #7f8c8d;
-}/*# sourceMappingURL=about.css.map */xt", cursive;
-  --bold-text: "Plaster", cursive;
+:root {
+  --light-color: rgba(223, 230, 233, 1);
+  --cap-text: "Bellota Text", cursive;
+  --header-font: "Plaster", cursive;
   --typo-text: "Roboto Slab", serif;
   --red-color: rgba(214, 48, 49, 0.7);
   --drak-color: #2d3436;
@@ -103,7 +103,7 @@ nav a {
 
 .mobile-title {
   visibility: hidden;
-  font-family: var(--bold-text);
+  font-family: var(--header-font);
   color: var(--light-color);
   font-size: 120px;
   position: absolute;

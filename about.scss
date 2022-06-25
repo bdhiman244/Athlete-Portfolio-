@@ -1,7 +1,7 @@
 :root {
   --light-color: rgba(223, 230, 233, 1);
   --cap-text: "Bellota Text", cursive;
-  --bold-text: "Plaster", cursive;
+  --header-font: "Plaster", cursive;
   --typo-text: "Roboto Slab", serif;
   --red-color: rgba(214, 48, 49, 0.7);
   --drak-color: #2d3436;
@@ -94,7 +94,7 @@ nav {
 
 .mobile-title {
   visibility: hidden;
-  font-family: var(--bold-text);
+  font-family: var(--header-font);
   color: var(--light-color);
   font-size: 120px;
   position: absolute;
