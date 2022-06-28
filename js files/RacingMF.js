@@ -15,7 +15,7 @@ gsap.to(circleSVG, {
 });
 
 gsap.to(".bigorre-tiger", {
-    delay: 3,
+    delay: 1.5,
     duration: 4,
     rotateX: -360,
     repeat: -1,
