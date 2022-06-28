@@ -50,7 +50,6 @@ h3 {
   width: 95%;
   margin: 0 auto;
 }
-
 .df {
   display: flex;
   justify-content: center;
@@ -59,6 +58,8 @@ h3 {
 ul {
   list-style: none;
 }
+
+//nav css
 
 .nav-toggle {
   font-size: 3rem;
@@ -108,97 +109,68 @@ ul {
   text-shadow: var(--color-red) 6px 6px 3px;
 }
 
-.header-title {
-  font-size: 5.5rem;
-  margin-top: 0.65em;
-  margin-left: 0.2em;
-  letter-spacing: 2px;
-}
+//specifics
 
-.header-container {
+//header/title
+.title-section {
+  margin-top: 2.5em;
   position: relative;
+}
+.title-text {
+  margin-top: 1em;
+  font-size: 5rem;
 }
 
 .small-img {
   width: 50%;
 }
 
-.large-img {
-  width: 80%;
-}
-
-.skull-img {
+.teton-img {
+  width: 70%;
   position: absolute;
+  top: -35%;
+  left: 30%;
   z-index: -1;
-  top: 45%;
-  left: 48%;
-}
-
-.tashi-img {
-  position: absolute;
-  z-index: -1;
-  top: 45%;
-  left: 0;
-}
-
-.aba-img {
-  border-radius: 10px;
 }
 
 .section-one {
+  margin-top: 5rem;
   position: relative;
 }
 
-.section-two {
-  padding-bottom: 2em;
-  display: flex;
-  justify-content: center;
+.curly-brace {
+  width: 4.5rem;
+  filter: invert(90%);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.section-one-content {
-  font-weight: 100;
-  font-size: 2rem;
-  text-align: right;
-  margin-right: 0.25em;
-  padding-right: 0.5em;
-  padding-top: 0.5em;
-  border-right: 1px dashed var(--color-white);
+.contact-list {
+  text-align: center;
+  padding-top: 0.2em;
 }
 
-@media (max-width: 550px) {
-  .page-wrapper {
-    display: block;
-  }
+.contact-list-item {
+  margin-top: 1em;
+  font-family: var(--p-font);
+  font-weight: 400;
 }
+
+.contact-list-link {
+  color: var(--color-white);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.shrink-wrap {
+  display: block;
+}
+
 @media (min-width: 800px) {
-  body {
-    position: relative;
-  }
-
-  .page-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .col-left {
-    width: 40%;
-    margin-top: 0;
-    position: relative;
-  }
-
-  .col-right {
-    width: 35%;
-    margin-top: 3em;
-  }
-
-  .header-container {
-    position: unset;
-  }
-
   .nav-toggle {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
@@ -206,53 +178,49 @@ ul {
   .nav__list {
     display: flex;
     justify-content: flex-end;
-    margin-right: 6em;
+    margin-right: 3em;
   }
-
   .nav__item {
-    margin-left: 2em;
+    margin-right: 2em;
   }
-
   .nav__link {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .nav__link:hover {
     text-shadow: var(--color-red) 3px 3px 3px;
   }
 
-  .header-title {
-    font-size: 8rem;
-    margin-top: 1.3em;
+  .shrink-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
   }
 
-  .section-one-content {
-    font-size: 2.5rem;
-    margin-right: 0;
-    padding-right: 0.5em;
-    padding-top: 0;
+  .col-one {
+    width: 50%;
   }
 
-  .skull-img {
+  .col-two {
+    width: 40%;
+  }
+
+  .title-text {
+    margin-top: 1em;
+    font-size: 6.5rem;
+  }
+  .teton-img {
     width: 70%;
-    top: -10%;
-    left: 60%;
-  }
-
-  .section-two {
-    padding-bottom: 0;
-    display: block;
     position: absolute;
-    top: 55%;
-    left: 10%;
+    top: -25%;
+    left: 30%;
+    z-index: -1;
   }
-
-  .aba-img {
-    width: 30%;
-    border-radius: 0px;
+  .curly-brace {
+    width: 6.5rem;
+    filter: invert(90%);
+    position: absolute;
+    top: -1.5em;
+    left: 1em;
   }
-
-  .tashi-img {
-    display: none;
-  }
-}/*# sourceMappingURL=philosophyMF.css.map */
+}

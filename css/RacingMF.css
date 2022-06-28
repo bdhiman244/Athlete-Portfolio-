@@ -111,8 +111,16 @@ li {
   text-transform: uppercase;
 }
 
+.contact__link {
+  font-family: var(--section-title-font);
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: var(--color-white);
+  text-align: right;
+}
+
 .nav__link:hover {
-  text-shadow: var(--color-red) 6px 6px 3px;
+  text-shadow: var(--color-red) 3px 3px 3px;
 }
 
 .svg-bundle {
@@ -230,7 +238,6 @@ li {
 .instagram-icon {
   font-size: 2.5em;
   color: var(--color-red);
-  -webkit-text-stroke: 0.5px #f6e58d;
 }
 
 .sup {
