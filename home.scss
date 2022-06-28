@@ -132,12 +132,13 @@ h1 {
   }
 
   .nav__link:hover {
-    text-shadow: var(--color-red) 2px 2px 5px;
+    text-shadow: var(--color-red) 6px 6px 3px;
   }
 
   .icon-link {
     color: var(--color-white);
     text-decoration: none;
+    transition: 0.2s ease-in-out;
   }
 
   .instagram-icon {
@@ -149,6 +150,6 @@ h1 {
   }
 
   .icon-link:hover .instagram-icon {
-    text-shadow: red 2px 2px 5px;
+    text-shadow: red 4px 4px 5px;
   }
 }
