@@ -68,8 +68,6 @@ li {
 .container {
   width: 95%;
   margin: 0 auto;
-
-  // border: 2px solid red;
 }
 
 .nav-toggle {
@@ -114,7 +112,7 @@ li {
 }
 
 .nav__link:hover {
-  opacity: 0.75;
+  text-shadow: var(--color-red) 6px 6px 3px;
 }
 
 .svg-bundle {
