@@ -21,6 +21,7 @@ body {
   font-family: var(--p-font);
   font-size: 1.3rem;
   color: var(--color-black);
+  background-color: #ecf0f1;
 }
 
 .page-wrapper {
@@ -93,6 +94,11 @@ h1 {
   opacity: 0.9;
 }
 
+.icon-link {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
 .instagram-icon {
   position: absolute;
   top: 10px;
@@ -130,11 +136,17 @@ h1 {
     text-shadow: var(--color-red) 2px 2px 5px;
   }
 
+  .icon-link {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
   .instagram-icon {
     top: 15px;
     right: 15px;
     font-size: 3rem;
     transition: 0.2s ease-in-out;
+    color: #ecf0f1;
   }
 
   .icon-link:hover .instagram-icon {
