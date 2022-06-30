@@ -22,5 +22,18 @@ gsap.to(".bigorre-tiger", {
     ease: "slow"
 });
 
+var tl = gsap.timeline();
+
+tl.from(".svg-bundle", {
+    duration: 1,
+    x: -300,
+    ease: "bounce"
+});
+tl.from(".typography-container", {
+    duration: 1,
+    x: 300,
+    ease: "bounce"
+}, "-=100%");
+
 
 

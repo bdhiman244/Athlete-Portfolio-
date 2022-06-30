@@ -103,10 +103,11 @@ ul {
   font-style: normal;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
+  font-size: 1.6rem;
 }
 
 .nav__link:hover {
-  text-shadow: var(--color-red) 6px 6px 3px;
+  text-shadow: var(--color-red) 3px 3px 3px;
 }
 
 //specifics
@@ -184,7 +185,7 @@ ul {
     margin-right: 2em;
   }
   .nav__link {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .nav__link:hover {
