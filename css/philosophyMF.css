@@ -207,7 +207,7 @@ ul {
   .nav__list {
     display: flex;
     justify-content: flex-end;
-    margin-right: 6em;
+    margin-right: 2.5em;
   }
 
   .nav__item {
