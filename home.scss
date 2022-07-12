@@ -29,6 +29,48 @@ body {
   position: relative;
 }
 
+.bars-9 {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: conic-gradient(from -90deg, var(--color-white) 90deg, #0000 0);
+  background: var(--c), var(--c);
+  background-size: 40% 40%;
+  animation: b9 1s infinite alternate;
+}
+
+.bars-wrap {
+  height: 45px;
+}
+
+.preload-wrapper {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    132deg,
+    rgba(127, 140, 141, 1) 32%,
+    rgba(214, 48, 49, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes b9 {
+  0%,
+  10% {
+    background-position: 0 0, 0 calc(100% / 3);
+  }
+  50% {
+    background-position: 0 0, calc(100% / 3) calc(100% / 3);
+  }
+  90%,
+  100% {
+    background-position: 0 0, calc(100% / 3) 0;
+  }
+}
+
 img {
   max-width: 100%;
 }
