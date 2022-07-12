@@ -2,10 +2,9 @@ var tl = gsap.timeline();
 
 
 $(window).on("load", function(){
-    $(".preload-wrapper").fadeOut("slow"); 
-})
-
-tl.from(".hero-img-container", {
+    setTimeout(function(){  
+      $(".preload-wrapper").fadeOut("slow"); 
+      tl.from(".hero-img-container", {
     duration: 2,
     width: 0,
     opacity: 0
@@ -43,5 +42,6 @@ tl.to(".header__subhead", {
     },
     duration: 4,
     ease: "none"
-}, "-=20%");
-
+}, "-=20%");  
+    }, 2000);
+  })
