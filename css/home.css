@@ -156,6 +156,15 @@ h1 {
   text-shadow: #2f3640 2px 2px 5px;
 }
 
+.spotify-icon {
+  position: absolute;
+  top: 50px;
+  right: 14px;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  text-shadow: #2f3640 2px 2px 5px;
+}
+
 @media (min-width: 800px) {
   .hero-img-container {
     background-image: url(/images/redshorts1.jpg);
@@ -199,6 +208,18 @@ h1 {
   }
 
   .icon-link:hover .instagram-icon {
-    text-shadow: red 4px 4px 5px;
+    text-shadow: red 3px 3px 5px;
+  }
+
+  .spotify-icon {
+    top: 75px;
+    right: 13px;
+    font-size: 2.9rem;
+    transition: 0.2s ease-in-out;
+    color: #ecf0f1;
+  }
+
+  .icon-link:hover .spotify-icon {
+    text-shadow: red 3px 3px 5px;
   }
 }/*# sourceMappingURL=home.css.map */

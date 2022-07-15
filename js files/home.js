@@ -28,6 +28,11 @@ tl.from(".instagram-icon", {
     opacity: 0, 
     color: "#d63031"
 });
+tl.from(".spotify-icon", {
+    duration: 1,
+    opacity: 0, 
+    color: "#d63031"
+}, "-=0.5");
 
 tl.to(".header__subhead", {
      keyframes: {

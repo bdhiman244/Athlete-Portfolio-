@@ -24,14 +24,14 @@ gsap.to(".bigorre-tiger", {
 
 var tl = gsap.timeline();
 
-tl.from(".svg-bundle", {
+tl.to(".svg-bundle", {
     duration: 1,
-    x: -300,
+    x: 0,
     ease: "bounce"
 });
-tl.from(".typography-container", {
+tl.to(".typography-container", {
     duration: 1,
-    x: 300,
+    x: 0,
     ease: "bounce"
 }, "-=100%");
 
