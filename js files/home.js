@@ -33,6 +33,11 @@ tl.from(".spotify-icon", {
     opacity: 0, 
     color: "#d63031"
 }, "-=0.5");
+tl.from(".runner-icon", {
+    duration: 1,
+    opacity: 0, 
+    color: "#d63031"
+}, "-=0.5");
 
 tl.to(".header__subhead", {
      keyframes: {

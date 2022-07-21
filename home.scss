@@ -163,8 +163,24 @@ h1 {
   transition: 0.2s ease;
   border-radius: 10px;
 }
+.tooltip-text-three {
+  position: absolute;
+  top: 10px;
+  left: -130px;
+  background-color: var(--color-black);
+  color: #ecf0f1;
+  font-size: 0.8rem;
+  font-family: var(--section-title-font);
+  padding: 0.5em 0.5em;
+  visibility: hidden;
+  transition: 0.2s ease;
+  border-radius: 10px;
+}
 
 .tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+.tooltip:hover .tooltip-text-three {
   visibility: visible;
 }
 
@@ -175,7 +191,13 @@ h1 {
   text-shadow: #2f3640 2px 2px 5px;
 }
 .spotify-icon {
+  margin-bottom: 0.3em;
   font-size: 1.8rem;
+  color: var(--color-white);
+  text-shadow: #2f3640 2px 2px 5px;
+}
+.runner-icon {
+  font-size: 2rem;
   color: var(--color-white);
   text-shadow: #2f3640 2px 2px 5px;
 }
@@ -237,8 +259,18 @@ h1 {
     transition: 0.2s ease-in-out;
     color: #ecf0f1;
   }
+  .runner-icon {
+    top: 75px;
+    right: 13px;
+    font-size: 3.1rem;
+    transition: 0.2s ease-in-out;
+    color: #ecf0f1;
+  }
 
   .icon-link:hover .spotify-icon {
+    text-shadow: red 3px 3px 5px;
+  }
+  .icon-link:hover .runner-icon {
     text-shadow: red 3px 3px 5px;
   }
 }
