@@ -191,7 +191,7 @@ h1 {
   text-shadow: #2f3640 2px 2px 5px;
 }
 .spotify-icon {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
   font-size: 1.8rem;
   color: var(--color-white);
   text-shadow: #2f3640 2px 2px 5px;
@@ -204,6 +204,9 @@ h1 {
 
 @media (max-width: 500px) {
   .tooltip-text {
+    display: none;
+  }
+  .tooltip-text-three {
     display: none;
   }
 }
