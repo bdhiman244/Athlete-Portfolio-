@@ -23,21 +23,13 @@ tl.from(".nav__item", {
     stagger: 0.5
 }, "-=70%");
 
-tl.from(".instagram-icon", {
-    duration: 1,
-    opacity: 0, 
-    color: "#d63031"
-});
-tl.from(".spotify-icon", {
-    duration: 1,
-    opacity: 0, 
-    color: "#d63031"
-}, "-=0.5");
-tl.from(".runner-icon", {
-    duration: 1,
-    opacity: 0, 
-    color: "#d63031"
-}, "-=0.5");
+tl.from(".icon-link", {
+    duration: 1.5,
+    opacity: 0,
+    y: -250,
+    stagger: 0.5,
+    ease: 'slow'
+}, "-=80%");
 
 tl.to(".header__subhead", {
      keyframes: {
