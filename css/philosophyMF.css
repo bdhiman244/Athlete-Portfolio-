@@ -47,7 +47,7 @@ h3 {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -153,7 +153,7 @@ ul {
 }
 
 .section-two {
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
   display: flex;
   justify-content: center;
   position: relative;
@@ -167,6 +167,16 @@ ul {
   padding-right: 0.5em;
   padding-top: 0.5em;
   border-right: 1px dashed var(--color-white);
+}
+
+.section-two-content {
+  font-weight: 100;
+  font-size: 1.7rem;
+  text-align: left;
+  margin-left: 0.25em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  border-left: 1px dashed var(--color-white);
 }
 
 @media (max-width: 550px) {
