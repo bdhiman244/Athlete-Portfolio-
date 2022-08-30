@@ -221,7 +221,6 @@ h1 {
   .tooltip-text {
     display: none;
   }
-
   .tooltip-text-three {
     display: none;
   }
@@ -230,36 +229,29 @@ h1 {
   .hero-img-container {
     background-image: url(/images/redshorts1.jpg);
   }
-
   h1 {
     font-size: 5rem;
   }
-
   .nav__list {
     display: flex;
     justify-content: center;
     margin-top: 17em;
     margin-right: 5em;
   }
-
   .nav__item {
     margin-left: 3em;
   }
-
   .nav__link {
     transition: 0.2s ease-in-out;
   }
-
   .nav__link:hover {
     text-shadow: var(--color-red) 3px 3px 3px;
   }
-
   .icon-link {
     color: var(--color-white);
     text-decoration: none;
     transition: 0.2s ease-in-out;
   }
-
   .instagram-icon {
     top: 15px;
     right: 15px;
@@ -267,11 +259,9 @@ h1 {
     transition: 0.2s ease-in-out;
     color: #ecf0f1;
   }
-
   .icon-link:hover .instagram-icon {
     text-shadow: red 3px 3px 5px;
   }
-
   .spotify-icon {
     top: 75px;
     right: 13px;
@@ -279,7 +269,6 @@ h1 {
     transition: 0.2s ease-in-out;
     color: #ecf0f1;
   }
-
   .runner-icon {
     top: 75px;
     right: 13px;
@@ -287,11 +276,9 @@ h1 {
     transition: 0.2s ease-in-out;
     color: #ecf0f1;
   }
-
   .icon-link:hover .spotify-icon {
     text-shadow: red 3px 3px 5px;
   }
-
   .icon-link:hover .runner-icon {
     text-shadow: red 3px 3px 5px;
   }

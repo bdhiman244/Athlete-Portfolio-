@@ -263,49 +263,40 @@ li {
   .nav-toggle {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
-
   .nav__list {
     display: flex;
     justify-content: center;
   }
-
   .nav__item {
     margin-left: 2em;
   }
-
   .svg-bundle {
     margin-top: 3em;
     position: relative;
     max-width: 500px;
   }
-
   .header-container {
     display: flex;
     align-content: center;
   }
-
   .header-title {
     font-size: 6rem;
     margin-left: 0.5em;
     margin-top: 1.5em;
   }
-
   .race-one {
     max-width: 500px;
     min-width: 300px;
     margin-bottom: 3em;
   }
-
   .race-card-wrapper {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3em;
   }
-
   .results-next-race {
     font-size: 3.5rem;
   }

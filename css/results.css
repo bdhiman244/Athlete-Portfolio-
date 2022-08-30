@@ -168,55 +168,44 @@ ul {
   .nav-toggle {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
-
   .nav__list {
     display: flex;
   }
-
   .nav__item {
     margin-left: 2em;
   }
-
   .title-section {
     margin-top: 2.5em;
     position: relative;
   }
-
   .title-text {
     margin-top: 1em;
     font-size: 8rem;
     padding-left: 0.8em;
   }
-
   .pyramid-img {
     width: 30%;
     top: -65%;
     left: 50%;
   }
-
   .section-body {
     margin-top: 10rem;
     width: 60%;
   }
-
   .results-list__year {
     font-size: 3rem;
   }
-
   .results-list__item {
     font-size: 1.6rem;
   }
-
   .race-title {
     font-weight: 200;
     font-style: italic;
     font-size: 2rem;
   }
-
   .list__title {
     font-size: 3rem;
     margin-left: 1em;

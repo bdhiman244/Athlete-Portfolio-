@@ -169,48 +169,38 @@ ul {
   .nav-toggle {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
-
   .nav__list {
     display: flex;
     justify-content: flex-end;
     margin-right: 3em;
   }
-
   .nav__item {
     margin-right: 2em;
   }
-
   .nav__link {
     font-size: 1.6rem;
   }
-
   .nav__link:hover {
     text-shadow: var(--color-red) 3px 3px 3px;
   }
-
   .shrink-wrap {
     display: flex;
     justify-content: space-between;
     margin-top: 5em;
   }
-
   .col-one {
     width: 50%;
   }
-
   .col-two {
     width: 40%;
   }
-
   .title-text {
     margin-top: 1em;
     font-size: 6.5rem;
   }
-
   .teton-img {
     width: 70%;
     position: absolute;
@@ -218,7 +208,6 @@ ul {
     left: 30%;
     z-index: -1;
   }
-
   .curly-brace {
     width: 6.5rem;
     filter: invert(90%);

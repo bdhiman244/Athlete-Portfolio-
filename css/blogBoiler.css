@@ -57,6 +57,11 @@ h3 {
   justify-content: space-between;
 }
 
+.df-center {
+  display: flex;
+  justify-content: center;
+}
+
 ul {
   list-style: none;
 }
@@ -168,6 +173,10 @@ ul {
   width: 85%;
 }
 
+.blog-photo-tall {
+  width: 70%;
+}
+
 .article-list__link {
   color: var(--color-white);
   font-size: 0.85em;
@@ -184,15 +193,49 @@ ul {
   margin-left: 2em;
 }
 
+.table {
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 2rem 0;
+}
+
+.table .table-title {
+  margin: 1rem 0;
+}
+
+.table th {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.table td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.content-paragraph-subhead {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 100;
+  margin: 1rem 0;
+}
+
+@media (max-width: 500px) {
+  .table th {
+    font-size: 0.7rem;
+  }
+  .table td {
+    font-size: 0.8rem;
+  }
+}
 @media (min-width: 600px) {
   .container {
     width: 50%;
   }
-
   .title h2 {
-    letter-spacing: 0.5em;
+    letter-spacing: 0.1em;
   }
-
   .photo-credit {
     font-family: var(--p-font);
     font-size: 1rem;
