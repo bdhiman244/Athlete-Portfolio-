@@ -176,11 +176,27 @@ h1 {
   transition: 0.2s ease;
   border-radius: 10px;
 }
+.tooltip-text-four {
+  position: absolute;
+  top: 7px;
+  left: -95px;
+  background-color: var(--color-black);
+  color: #ecf0f1;
+  font-size: 0.8rem;
+  font-family: var(--section-title-font);
+  padding: 0.5em 0.5em;
+  visibility: hidden;
+  transition: 0.2s ease;
+  border-radius: 10px;
+}
 
 .tooltip:hover .tooltip-text {
   visibility: visible;
 }
 .tooltip:hover .tooltip-text-three {
+  visibility: visible;
+}
+.tooltip:hover .tooltip-text-four {
   visibility: visible;
 }
 
@@ -197,9 +213,16 @@ h1 {
   text-shadow: #2f3640 2px 2px 5px;
 }
 .runner-icon {
+  margin-bottom: 0.4em;
   font-size: 2rem;
   color: var(--color-white);
   text-shadow: #2f3640 2px 2px 5px;
+}
+.strava-icon {
+  font-size: 2.2rem;
+  color: var(--color-white);
+  text-shadow: #2f3640 2px 2px 5px;
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 500px) {
@@ -208,6 +231,13 @@ h1 {
   }
   .tooltip-text-three {
     display: none;
+  }
+  .tooltip-text-four {
+    display: none;
+  }
+  .strava-icon {
+    font-size: 1.7rem;
+    margin-left: 0.2rem;
   }
 }
 
@@ -274,6 +304,9 @@ h1 {
     text-shadow: red 3px 3px 5px;
   }
   .icon-link:hover .runner-icon {
+    text-shadow: red 3px 3px 5px;
+  }
+  .icon-link:hover .strava-icon {
     text-shadow: red 3px 3px 5px;
   }
 }
