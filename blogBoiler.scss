@@ -18,6 +18,10 @@
   --color-soft-white: rgba(236, 240, 241, 0.7);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--roboto-font);
@@ -62,6 +66,16 @@ h3 {
 
 ul {
   list-style: none;
+}
+
+.jump-to-list {
+  list-style: circle;
+}
+
+.jump-to-list-link {
+  color: var(--color-white);
+  font-style: italic;
+  text-decoration: none;
 }
 
 //nav css
@@ -115,7 +129,19 @@ ul {
   text-shadow: var(--color-red) 3px 3px 3px;
 }
 
+.bottom-nav {
+  text-align: right;
+}
+
+.boost-font {
+  font-size: 2rem;
+}
+
 //title
+
+.article-wrap {
+  padding-bottom: 4em;
+}
 
 .container {
   width: 90%;
@@ -140,6 +166,26 @@ ul {
 
 .article-main {
   margin-top: 1em;
+}
+
+.article-subhead-large {
+  font-family: var(--roboto-font);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.quiet-link {
+  color: var(--color-white);
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.quiet-link:hover {
+  color: var(--color-red);
+}
+
+.caption {
+  font-size: 0.85rem;
 }
 
 .has-dropcap::first-letter {
@@ -236,6 +282,9 @@ ul {
   .table td {
     font-size: 0.8rem;
   }
+  .jump-to-list-link {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -251,5 +300,9 @@ ul {
     font-family: var(--p-font);
     font-size: 1rem;
     margin-left: 3em;
+  }
+
+  .jump-to-list-link:hover {
+    color: var(--color-red);
   }
 }
