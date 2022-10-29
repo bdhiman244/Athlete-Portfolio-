@@ -233,6 +233,12 @@ li {
   -webkit-text-stroke: 0.5px black;
 }
 
+.trophy-icon-third {
+  color: #fab1a0;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 0.5px black;
+}
+
 .stopwatch-icon {
   font-size: 2rem;
 }

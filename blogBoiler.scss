@@ -266,6 +266,10 @@ ul {
   padding: 5px;
 }
 
+.casual-link {
+  color: var(--color-white);
+}
+
 //body
 
 .content-paragraph-subhead {
@@ -284,6 +288,9 @@ ul {
   }
   .jump-to-list-link {
     font-size: 1.2rem;
+  }
+  .blog-photo-tall {
+    width: 85%;
   }
 }
 
