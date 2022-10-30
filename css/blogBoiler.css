@@ -184,6 +184,12 @@ ul {
   font-size: 0.85rem;
 }
 
+.photo-credit-offical {
+  font-family: var(--p-font);
+  font-size: 1.1rem;
+  margin-left: 5.5em;
+}
+
 .has-dropcap::first-letter {
   color: var(--color-red);
   font-size: 4em;
@@ -269,6 +275,7 @@ ul {
   font-style: italic;
   font-weight: 100;
   margin: 1rem 0;
+  position: relative;
 }
 
 @media (max-width: 500px) {
