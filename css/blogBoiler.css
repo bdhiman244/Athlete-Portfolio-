@@ -291,6 +291,11 @@ ul {
   .blog-photo-tall {
     width: 85%;
   }
+  .photo-credit-offical {
+    font-family: var(--p-font);
+    font-size: 0.8rem;
+    margin-left: 5.5em;
+  }
 }
 @media (min-width: 600px) {
   .container {
