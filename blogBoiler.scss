@@ -51,9 +51,22 @@ h3 {
   font-size: 2rem;
 }
 
+.italics {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline 0.35px;
+  text-underline-offset: 3px;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
+}
+.table-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
 }
 .df {
   display: flex;
@@ -264,7 +277,6 @@ ul {
 .table th {
   border: 1px solid #c0c0c0;
   padding: 5px;
-  // background: #f0f0f0;
 }
 
 .table td {
