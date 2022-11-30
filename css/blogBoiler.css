@@ -61,6 +61,34 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.pull-quote {
+  width: 90%;
+  outline: 1.2px dashed var(--color-white);
+  border-radius: 10px;
+  outline-offset: 10px;
+}
+
+.pull-quote-title {
+  font-weight: 200;
+  font-size: 0.9em;
+  font-style: italic;
+  letter-spacing: 5px;
+}
+
+.pull-quote-text {
+  font-weight: 100;
+  font-size: 1.1em;
+}
+
+.pull-quote-credit {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -80,6 +108,12 @@ h3 {
 .df-center {
   display: flex;
   justify-content: center;
+}
+
+.df-center-straight {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 ul {
@@ -168,6 +202,10 @@ ul {
 .title h2 {
   letter-spacing: 0.2em;
 }
+.title h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+}
 .title h6 {
   text-align: right;
 }
@@ -198,6 +236,20 @@ ul {
 
 .caption {
   font-size: 0.85rem;
+}
+
+.vertical-photo-caption {
+  font-size: 0.85rem;
+  margin-left: 4rem;
+  width: 70%;
+  text-align: center;
+}
+
+.vertical-photo-caption-squeeze {
+  font-size: 0.85rem;
+  margin-left: 5rem;
+  width: 40%;
+  text-align: center;
 }
 
 .photo-credit-offical {
@@ -245,6 +297,14 @@ ul {
   width: 70%;
 }
 
+.blog-photo-tall-squeeze {
+  width: 55%;
+}
+
+.margin-zero {
+  margin: 0 auto;
+}
+
 .article-list__link {
   color: var(--color-white);
   font-size: 0.85em;
@@ -265,7 +325,7 @@ ul {
   border: 1px solid #c0c0c0;
   border-collapse: collapse;
   padding: 5px;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .table .table-title {
@@ -294,6 +354,14 @@ ul {
   position: relative;
 }
 
+.content-paragraph-subhead-smaller {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0 0;
+  position: relative;
+}
+
 @media (max-width: 500px) {
   .table th {
     font-size: 0.7rem;
@@ -311,6 +379,25 @@ ul {
     font-family: var(--p-font);
     font-size: 0.8rem;
     margin-left: 5.5em;
+  }
+  .pull-quote-credit {
+    font-weight: 300;
+    font-size: 0.6em;
+  }
+  .blog-photo-tall-squeeze {
+    width: 85%;
+  }
+  .vertical-photo-caption-squeeze {
+    font-size: 0.8rem;
+    margin-left: 0rem;
+    text-align: right;
+    overflow-wrap: break-word;
+  }
+  .vertical-photo-caption {
+    font-size: 0.8rem;
+    margin-left: 0rem;
+    width: 70%;
+    text-align: center;
   }
 }
 @media (min-width: 600px) {
