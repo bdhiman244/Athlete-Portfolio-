@@ -39,7 +39,7 @@ tl.to(".header__subhead", {
        
         "75%": { textContent: 'PURSUIT', x: 30, rotateX: 360 },
      
-        "100%": { textContent: 'MTN RUNNER', x: 0 },
+        "100%": { textContent: 'ULTRA RUNNER', x: 0 },
         easeEach: 'power4'
     },
     duration: 4,

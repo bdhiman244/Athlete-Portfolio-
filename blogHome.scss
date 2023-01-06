@@ -170,6 +170,23 @@ ul {
   color: #ecf0f1;
 }
 
+.article-title-experiment {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-soft-white);
+  border-bottom-right-radius: 10px;
+  width: 55%;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-right: 0.1em;
+
+  h2 {
+    font-family: var(--p-font);
+    font-size: 1.6rem;
+    color: var(--color-black);
+  }
+}
 .article-title {
   position: absolute;
   bottom: 5px;
@@ -222,6 +239,15 @@ ul {
     width: 90%;
   }
 
+  .blog-entry-experiment {
+    width: 100%;
+    position: relative;
+    background-image: url(/images/blog-photos/spirit-warrior-thumb.jpg);
+    background-size: cover;
+    height: 96%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
   .blog-entry {
     width: 100%;
   }

@@ -152,9 +152,11 @@ ul {
   font-family: var(--p-font);
   font-weight: 100;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .race-title {
+  font-size: 1.6rem;
   font-weight: 200;
   font-style: italic;
 }
@@ -164,6 +166,16 @@ ul {
   font-family: var(--p-font);
   font-weight: 100;
   text-transform: uppercase;
+}
+
+.trophy-bronze {
+  color: #fab1a0;
+}
+.trophy-silver {
+  color: #dfe6e9;
+}
+.trophy-gold {
+  color: #fdcb6e;
 }
 
 @media (min-width: 800px) {
@@ -205,7 +217,7 @@ ul {
   }
 
   .results-list__year {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .results-list__item {
