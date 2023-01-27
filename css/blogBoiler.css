@@ -275,7 +275,13 @@ ul {
 }
 
 .article-list__item {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.article-list_item-title {
+  font-style: italic;
+  font-size: 1.3em;
+  font-weight: 100;
 }
 
 .definition {
