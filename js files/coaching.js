@@ -35,7 +35,10 @@ gsap.from(".offering-each-list-item", {
     delay: 1,
     scrollTrigger: {
         trigger: ".offering-list-heading",
-        toggleActions: "restart none none none"
+        toggleActions: "restart none none none",
+        start: "50px 50%",
+        end: "+=50%",
+     
     },
     x: 300,
     opacity: 0,
@@ -43,9 +46,9 @@ gsap.from(".offering-each-list-item", {
     stagger: 0.3
 });
 
-gsap.to(".contact-body", {
-    scrollTrigger: ".arrow-down-icon",
-    y: -2,
-    repeat: 3,
-    ease: "elastic"
-});
+// gsap.to(".contact-body", {
+//     scrollTrigger: ".arrow-down-icon",
+//     y: -2,
+//     repeat: 3,
+//     ease: "elastic"
+// });
