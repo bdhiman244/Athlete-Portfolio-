@@ -5,7 +5,7 @@ $(window).on("load", function(){
     setTimeout(function(){  
       $(".preload-wrapper").fadeOut("slow"); 
       tl.from(".hero-img-container", {
-    duration: 1,
+    duration: 0.5,
     width: 0,
     opacity: 0
 });

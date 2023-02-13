@@ -10,7 +10,7 @@ navMenu.classList.toggle("nav--visibile");
 });
 
 tl.from(".title-text-coaching", {
-    delay: 0.5,
+    delay: 1,
     duration: 1,
     x: -300,
     opacity: 0
@@ -38,6 +38,7 @@ gsap.from(".offering-each-list-item", {
         toggleActions: "restart none none none"
     },
     x: 300,
+    opacity: 0,
     ease: "slow",
     stagger: 0.3
 });
@@ -45,5 +46,6 @@ gsap.from(".offering-each-list-item", {
 gsap.to(".contact-body", {
     scrollTrigger: ".arrow-down-icon",
     y: -2,
-    repeat: 3
+    repeat: 3,
+    ease: elastic
 });
