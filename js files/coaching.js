@@ -47,5 +47,5 @@ gsap.to(".contact-body", {
     scrollTrigger: ".arrow-down-icon",
     y: -2,
     repeat: 3,
-    ease: elastic
+    ease: "elastic"
 });
