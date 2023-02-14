@@ -34,10 +34,8 @@ gsap.to(".pitch", {
 gsap.from(".offering-each-list-item", {
     delay: 1,
     scrollTrigger: {
-        trigger: ".offering-list-heading",
-     
-        start: "50px 50%",
-        end: "+=50%",
+        trigger: ".offering-list-heading"
+        
      
     },
     x: 300,
