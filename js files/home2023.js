@@ -11,3 +11,9 @@ gsap.from(".nav__item", {
     x: -250,
     stagger: 0.5
 }, "-=70%");
+
+gsap.from(".name-text", {
+    delay: 2.5,
+    duration: 1,
+    opacity: 0
+});
