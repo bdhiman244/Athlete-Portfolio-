@@ -9,6 +9,7 @@
   --header-font: "Plaster", cursive;
   --section-title-font: "Fredoka", sans-serif;
   --roboto-font: "Roboto Slab", serif;
+  --raleway-font: "Raleway", sans-serif;
   --color-gold: #f6e58d;
   --color-white: #ecf0f1;
   --color-black: #2f3640;
@@ -22,7 +23,7 @@ body {
   font-family: var(--roboto-font);
   font-size: 1.3rem;
   color: var(--color-white);
-  background-color: var(--color-grey);
+  background-color: #2f3640;
 }
 
 img {
@@ -53,6 +54,7 @@ h3 {
 .df {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 ul {
@@ -99,8 +101,8 @@ ul {
 .nav__link {
   color: var(--color-white);
   text-decoration: none;
-  font-family: var(--section-title-font);
-  font-style: normal;
+  font-family: var(--raleway-font);
+  font-weight: 200;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
   font-size: 1.6rem;
@@ -118,8 +120,11 @@ ul {
   position: relative;
 }
 .title-text {
+  font-family: var(--raleway-font);
+  font-weight: 800;
+  text-shadow: #2f3640 2px 2px 5px;
   margin-top: 1em;
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 .small-img {
@@ -139,12 +144,44 @@ ul {
   position: relative;
 }
 
-.curly-brace {
-  width: 4.5rem;
-  filter: invert(90%);
-  position: absolute;
-  top: 0;
-  left: 0;
+.icon-box {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.hoka-logo {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.rrunning-logo {
+  width: 72%;
+}
+.icon-link {
+  text-decoration: none;
+  color: var(--color-white);
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.contact {
+  margin-top: 3rem;
+  text-align: center;
+  h2 {
+    font-family: var(--raleway-font);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-white);
+  }
+  h4 {
+    font-family: var(--raleway-font);
+    font-weight: 700;
+    // font-style: italic;
+    color: var(--color-white);
+  }
 }
 
 .contact-list {
@@ -216,12 +253,5 @@ ul {
     top: -25%;
     left: 30%;
     z-index: -1;
-  }
-  .curly-brace {
-    width: 6.5rem;
-    filter: invert(90%);
-    position: absolute;
-    top: -1.5em;
-    left: 1em;
   }
 }

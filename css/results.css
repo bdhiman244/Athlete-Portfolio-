@@ -9,6 +9,7 @@
   --header-font: "Plaster", cursive;
   --section-title-font: "Fredoka", sans-serif;
   --roboto-font: "Roboto Slab", serif;
+  --raleway-font: "Raleway", sans-serif;
   --color-gold: #f6e58d;
   --color-white: #ecf0f1;
   --color-black: #2f3640;
@@ -22,7 +23,7 @@ body {
   font-family: var(--roboto-font);
   font-size: 1.3rem;
   color: var(--color-white);
-  background-color: var(--color-grey);
+  background-color: #2f3640;
 }
 
 img {
@@ -98,8 +99,8 @@ ul {
 .nav__link {
   color: var(--color-white);
   text-decoration: none;
-  font-family: var(--section-title-font);
-  font-style: normal;
+  font-family: var(--raleway-font);
+  font-weight: 200;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
   font-size: 1.6rem;
@@ -115,12 +116,15 @@ ul {
 }
 
 .title-text {
+  font-family: var(--raleway-font);
+  font-weight: 800;
+  text-shadow: #2f3640 2px 2px 5px;
   margin-top: 1em;
   font-size: 5rem;
 }
 
 .pyramid-img {
-  width: 50%;
+  width: 60%;
   position: absolute;
   top: -40%;
   right: 0;
@@ -142,6 +146,7 @@ ul {
 }
 
 .results-list__year {
+  font-size: 1.2em;
   font-family: var(--roboto-font);
   text-align: center;
 }
@@ -198,7 +203,7 @@ ul {
   .title-text {
     margin-top: 1em;
     font-size: 8rem;
-    padding-left: 0.8em;
+    padding-left: 1.4em;
   }
   .pyramid-img {
     width: 30%;
@@ -206,11 +211,11 @@ ul {
     left: 50%;
   }
   .section-body {
-    margin-top: 10rem;
+    margin-top: 6rem;
     width: 60%;
   }
   .results-list__year {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .results-list__item {
     font-size: 1.6rem;

@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --p-font: "Bellota Text", cursive;
+  --header-font: "Plaster", cursive;
+  --section-title-font: "Fredoka", sans-serif;
+  --raleway-font: "Raleway", sans-serif;
+  --color-gold: #f6e58d;
+  --color-white: #ecf0f1;
+  --color-black: #2f3640;
+  --color-red: rgba(214, 48, 49, 0.7);
+  --color-silver: #bdc3c7;
+  --color-grey: #7f8c8d;
+}
+
+body {
+  margin: 0;
+  font-family: var(--p-font);
+  font-size: 1.3rem;
+  color: var(--color-black);
+  background-color: #2f3640;
+}
+
+.page-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.bars-9 {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: conic-gradient(from -90deg, var(--color-white) 90deg, #0000 0);
+  background: var(--c), var(--c);
+  background-size: 40% 40%;
+  -webkit-animation: b9 1s infinite alternate;
+          animation: b9 1s infinite alternate;
+}
+
+.bars-wrap {
+  height: 45px;
+}
+
+.preload-wrapper {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes b9 {
+  0%, 10% {
+    background-position: 0 0, 0 33.3333333333%;
+  }
+  50% {
+    background-position: 0 0, 33.3333333333% 33.3333333333%;
+  }
+  90%, 100% {
+    background-position: 0 0, 33.3333333333% 0;
+  }
+}
+
+@keyframes b9 {
+  0%, 10% {
+    background-position: 0 0, 0 33.3333333333%;
+  }
+  50% {
+    background-position: 0 0, 33.3333333333% 33.3333333333%;
+  }
+  90%, 100% {
+    background-position: 0 0, 33.3333333333% 0;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--header-font);
+  font-size: 3rem;
+  line-height: 90%;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.typography-container {
+  margin-left: 10px;
+}
+
+.header__subhead {
+  font-family: var(--p-font);
+  color: var(--color-white);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.background-frame {
+  position: relative;
+  background-color: #2f3640;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img-container {
+  background-image: url(/images/blog-photos/benMafateCrop2BW.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1001;
+  margin-left: 42%;
+}
+
+.name-text {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 1002;
+  font-family: var(--raleway-font);
+  font-weight: 400;
+  color: var(--color-white);
+  font-size: 1.6rem;
+}
+
+.icon-container {
+  position: absolute;
+  z-index: 1004;
+  bottom: 7.5%;
+  left: 0;
+  padding: 0;
+  margin-left: 2%;
+  width: 42%;
+  padding: 2% 0;
+  text-align: left;
+}
+
+.icon-link {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.instagram-icon {
+  font-size: 1.5rem;
+  color: rgba(236, 240, 241, 0.8);
+}
+
+.strava-icon {
+  font-size: 1.5rem;
+  color: rgba(236, 240, 241, 0.8);
+}
+
+.rrunning-logo {
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  width: 37%;
+}
+
+.nav {
+  padding-top: 70%;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin-left: 0.6em;
+  margin-top: 0;
+  position: relative;
+}
+
+.nav__item {
+  font-size: 1.3rem;
+  font-family: var(--raleway-font);
+  letter-spacing: 1.7px;
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.nav__item:nth-of-type(4) {
+  margin-bottom: 4rem;
+}
+
+.nav__item:nth-of-type(5) {
+  margin-left: 1.5rem;
+}
+
+.nav__link {
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: lowercase;
+  font-weight: 200;
+  align-self: center;
+}
+
+.icon-link {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .hero-img-container {
+    background-image: url(/images/benMafateCrop3LgBW.jpg);
+    background-size: contain;
+    width: 45%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-left: 40%;
+  }
+  .name-text {
+    position: absolute;
+    top: 2%;
+    left: 1.8%;
+    z-index: 1002;
+    font-family: var(--raleway-font);
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 2rem;
+  }
+  .nav {
+    padding-top: 20%;
+  }
+  .nav__list {
+    list-style: none;
+    padding: 0;
+    margin-left: 1em;
+    margin-top: 0;
+    position: relative;
+  }
+  .nav__link:hover {
+    text-shadow: var(--color-red) 3px 3px 3px;
+  }
+  .nav__link {
+    transition: 0.3s ease-in-out;
+  }
+}/*# sourceMappingURL=home2023.css.map */
