@@ -1,5 +1,3 @@
-var tl = gsap.timeline();
-
  gsap.from(".hero-img-container", {
     duration: 2,
     x: -700,
