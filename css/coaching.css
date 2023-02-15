@@ -103,6 +103,18 @@ ul {
   font-size: 1.6rem;
 }
 
+.nav__item {
+  margin-bottom: 0.25rem;
+}
+
+.nav__item:nth-of-type(1) {
+  padding-top: 0.5rem;
+}
+
+.nav__item:nth-of-type(4) {
+  padding-bottom: 0.5rem;
+}
+
 .nav__link:hover {
   text-shadow: var(--color-red) 3px 3px 3px;
 }
