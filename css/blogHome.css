@@ -188,7 +188,7 @@ ul {
 
 .frame {
   width: 75%;
-  padding-bottom: 5em;
+  padding-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
 }
@@ -208,7 +208,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 31%;
   font-family: var(--raleway-font);
   font-weight: 400;
   padding: 0.5em 0.2em;
@@ -226,6 +226,7 @@ ul {
 
 .blog-link {
   color: #ecf0f1;
+  margin-bottom: 0.5rem;
 }
 
 .article-title {
