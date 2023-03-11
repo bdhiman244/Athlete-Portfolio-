@@ -18,7 +18,7 @@ gsap.from(".name-text", {
     opacity: 0
 });
 gsap.to(".name-text", {
-    delay: 2.6,
+    delay: 2.8,
     duration: 5,
       backgroundImage:"linear-gradient(220deg,rgba(236, 240, 241, 1) 0%, rgba(236, 240, 241, 1) 100%)",
       yoyo: "true",
