@@ -124,6 +124,12 @@ h1 {
   margin-left: 42%;
 }
 
+.logo-img {
+  margin-top: 0.5em;
+  margin-left: 1.5em;
+  width: 25%;
+}
+
 .name-text {
   position: absolute;
   top: 3%;
