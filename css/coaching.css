@@ -55,6 +55,7 @@ h3 {
 .df {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 ul {
@@ -237,6 +238,26 @@ ul {
   border-top: 0;
   margin-bottom: 1rem;
   border-radius: 10px;
+}
+
+.image-div {
+  text-align: center;
+}
+
+.race_logo {
+  width: 50%;
+  margin-bottom: 0.7rem;
+}
+
+.race_logo_small {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.race_logo-detail {
+  width: 80%;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 .list-heading {
