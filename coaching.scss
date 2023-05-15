@@ -17,6 +17,9 @@
   --color-silver: #bdc3c7;
   --color-grey: #7f8c8d;
 }
+.wrapper {
+  width: 100vw;
+}
 
 body {
   margin: 0;
@@ -24,6 +27,7 @@ body {
   font-size: 1.3rem;
   color: var(--color-white);
   background-color: #2f3640;
+  width: 100vw;
 }
 
 img {
