@@ -158,6 +158,27 @@ ul {
   padding: 5px 5px;
 }
 
+.language-subhead {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--color-white);
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.flag-image {
+  width: 20%;
+}
+
 .body-subhead {
   font-size: 1.5rem;
 }
@@ -261,7 +282,7 @@ ul {
 
 .race_logo-detail {
   width: 80%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   margin-top: 1rem;
 }
 
@@ -500,6 +521,37 @@ ul {
     font-family: var(--p-font);
     font-size: 2.2rem;
     text-align: center;
+  }
+  .race_logo {
+    width: 40%;
+    margin-bottom: 0.7rem;
+  }
+  .race_logo_small {
+    width: 35%;
+    margin-bottom: 1rem;
+  }
+  .race_logo-detail {
+    width: 60%;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  .language-subhead {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-white);
+    padding-top: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .flags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .flag-image {
+    width: 15%;
   }
   .list-heading {
     font-size: 3rem;
