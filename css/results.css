@@ -143,6 +143,7 @@ ul {
   top: 0;
   left: 7%;
   border-left: 1px dashed var(--color-white);
+  z-index: -1;
 }
 
 .results-list__year {
@@ -164,6 +165,20 @@ ul {
   font-size: 1.6rem;
   font-weight: 200;
   font-style: italic;
+}
+
+.recap {
+  font-family: var(--p-font);
+  -webkit-text-decoration: underline 2px dotted var(--color-white);
+          text-decoration: underline 2px dotted var(--color-white);
+  text-underline-offset: 4px;
+  color: var(--color-white);
+  font-size: 1.3rem;
+}
+
+.pen-icon {
+  color: var(--color-white);
+  font-size: 0.8em;
 }
 
 .list__title {
