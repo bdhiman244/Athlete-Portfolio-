@@ -126,9 +126,9 @@ h1 {
 }
 
 .logo-img {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-left: 1.5em;
-  width: 25%;
+  width: 20%;
 }
 
 .name-text {
@@ -142,9 +142,9 @@ h1 {
   font-size: 1.6rem;
   -webkit-background-clip: text;
           background-clip: text;
-  background-image: linear-gradient(220deg, rgb(47, 54, 64) 98%, rgb(236, 240, 241) 100%);
+  background-image: linear-gradient(15deg, rgb(47, 54, 64) 98%, rgb(9, 132, 227) 100%);
   -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-width: 2px;
 }
 
 .icon-container {
@@ -242,9 +242,9 @@ h1 {
     font-size: 2rem;
     -webkit-background-clip: text;
             background-clip: text;
-    background-image: linear-gradient(220deg, rgb(47, 54, 64) 98%, rgb(236, 240, 241) 100%);
+    background-image: linear-gradient(15deg, rgb(47, 54, 64) 98%, rgb(9, 132, 227) 100%);
     -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2.4px;
   }
   .nav {
     padding-top: 20%;

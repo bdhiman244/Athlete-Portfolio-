@@ -124,9 +124,9 @@ h1 {
 // }
 
 .logo-img {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-left: 1.5em;
-  width: 25%;
+  width: 20%;
 }
 
 .name-text {
@@ -140,14 +140,13 @@ h1 {
   color: #2f3640;
   font-size: 1.6rem;
   background-clip: text;
-
   background-image: linear-gradient(
-    220deg,
+    15deg,
     rgba(47, 54, 64, 1) 98%,
-    rgba(236, 240, 241, 1) 100%
+    rgba(9, 132, 227, 1) 100%
   );
   -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-width: 2px;
 }
 
 .icon-container {
@@ -249,12 +248,12 @@ h1 {
     background-clip: text;
 
     background-image: linear-gradient(
-      220deg,
+      15deg,
       rgba(47, 54, 64, 1) 98%,
-      rgba(236, 240, 241, 1) 100%
+      rgba(9, 132, 227, 1) 100%
     );
     -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2.4px;
   }
 
   .nav {

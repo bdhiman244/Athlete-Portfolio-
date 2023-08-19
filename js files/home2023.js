@@ -25,7 +25,7 @@ gsap.from(".name-text", {
 gsap.to(".name-text", {
     delay: 2.8,
     duration: 5,
-      backgroundImage:"linear-gradient(220deg,rgba(236, 240, 241, 1) 0%, rgba(236, 240, 241, 1) 100%)",
+      backgroundImage:"linear-gradient(220deg,rgba(236, 240, 241, 1) 0%, rgba(9, 132, 227,1.0) 100%)",
       yoyo: "true",
       ease: "slow.out"
     
