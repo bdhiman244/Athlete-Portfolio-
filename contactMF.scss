@@ -174,6 +174,9 @@ ul {
 .contact {
   margin-top: 3rem;
   text-align: center;
+  // border: 2px dashed var(--color-white);
+  // border-radius: 10px;
+  // padding: 10px 10px;
   h2 {
     font-family: var(--raleway-font);
     font-weight: 400;
@@ -234,9 +237,18 @@ ul {
   }
 
   .shrink-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 38%;
+
+    // justify-content: space-between;
+    // margin-top: 5em;
+  }
+
+  .contact {
+    border: 2px dashed var(--color-white);
+    padding: 10px 10px;
+    border-radius: 10px;
   }
 
   .col-one {

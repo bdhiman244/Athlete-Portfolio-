@@ -230,9 +230,14 @@ ul {
     text-shadow: #95a5a6 3px 3px 3px;
   }
   .shrink-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 38%;
+  }
+  .contact {
+    border: 2px dashed var(--color-white);
+    padding: 10px 10px;
+    border-radius: 10px;
   }
   .col-one {
     width: 50%;
