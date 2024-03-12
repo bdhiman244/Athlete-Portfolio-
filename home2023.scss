@@ -104,8 +104,8 @@ h1 {
 }
 
 .hero-img-container {
-  background-image: url(/images/webHero2024Mobile.jpg);
-
+  // background-image: url(/images/webHero2024Mobile.jpg);
+  background-image: url(/images/webHero2Mobile_2024.jpg);
   background-size: contain;
   width: 100%;
   height: 100vh;
@@ -229,7 +229,8 @@ h1 {
 
 @media (min-width: 800px) {
   .hero-img-container {
-    background-image: url(/images/webHero2024.jpg);
+    // background-image: url(/images/webHero2024.jpg);
+    background-image: url(/images/webHero2_2024.jpg);
     background-size: contain;
     width: 45%;
     height: 100vh;
