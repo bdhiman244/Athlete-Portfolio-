@@ -133,18 +133,15 @@ h1 {
 
 .name-text {
   position: absolute;
-  top: 3%;
-  left: 3%;
+  top: 2.5%;
+  left: 3.5%;
   z-index: 1002;
   font-family: var(--raleway-font);
-  font-weight: 500;
-  color: #2f3640;
-  font-size: 1.6rem;
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-image: linear-gradient(15deg, rgb(47, 54, 64) 98%, rgb(9, 132, 227) 100%);
-  -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: 2px;
+  color: var(--color-gold);
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  opacity: 90%;
 }
 
 .icon-container {
@@ -182,13 +179,13 @@ h1 {
 }
 
 .nav {
-  padding-top: 70%;
+  padding-top: 80%;
 }
 
 .nav__list {
   list-style: none;
   padding: 0;
-  margin-left: 0.6em;
+  margin-left: 1em;
   margin-top: 0;
   position: relative;
 }
@@ -202,10 +199,7 @@ h1 {
 }
 
 .nav__item:nth-of-type(4) {
-  margin-bottom: 4rem;
-}
-
-.nav__item:nth-of-type(5) {
+  margin-top: 65%;
   margin-left: 1.5rem;
 }
 
@@ -226,25 +220,20 @@ h1 {
   .hero-img-container {
     background-image: url(/images/webHero2_2024.jpg);
     background-size: contain;
-    width: 45%;
+    width: 40%;
     height: 100vh;
     background-repeat: no-repeat;
     margin-left: 40%;
   }
   .name-text {
     position: absolute;
-    top: 2%;
-    left: 1.8%;
+    top: 3%;
+    left: 1.5%;
     z-index: 1002;
     font-family: var(--raleway-font);
     font-weight: 500;
-    color: #2f3640;
+    color: var(--color-gold);
     font-size: 2rem;
-    -webkit-background-clip: text;
-            background-clip: text;
-    background-image: linear-gradient(15deg, rgb(47, 54, 64) 98%, rgb(9, 132, 227) 100%);
-    -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: 2.4px;
   }
   .nav {
     padding-top: 20%;
@@ -261,5 +250,9 @@ h1 {
   }
   .nav__link {
     transition: 0.3s ease-in-out;
+  }
+  .nav__item:nth-of-type(4) {
+    margin-top: 10%;
+    margin-left: 1.5rem;
   }
 }/*# sourceMappingURL=home2023.css.map */

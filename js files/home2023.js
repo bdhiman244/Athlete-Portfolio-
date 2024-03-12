@@ -22,12 +22,12 @@ gsap.from(".name-text", {
     duration: 1,
     opacity: 0
 });
-gsap.to(".name-text", {
-    delay: 2.8,
-    duration: 5,
-      backgroundImage:"linear-gradient(220deg,rgba(236, 240, 241, 1) 0%, rgba(9, 132, 227,1.0) 100%)",
-      yoyo: "true",
-      ease: "slow.out"
+// gsap.to(".name-text", {
+//     delay: 2.8,
+//     duration: 5,
+//       backgroundImage:"linear-gradient(220deg,rgba(236, 240, 241, 1) 0%, rgba(9, 132, 227,1.0) 100%)",
+//       yoyo: "true",
+//       ease: "slow.out"
     
-});
+// });
 
