@@ -58,6 +58,7 @@ h3 {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
 //nav css
@@ -127,31 +128,10 @@ ul {
   margin-bottom: 0;
 }
 
-.pyramid-img {
-  width: 60%;
-  position: absolute;
-  top: -40%;
-  right: 0;
-  z-index: -1;
-}
-
-// .section-body {
-//   margin-top: 1em;
-// }
-
 .results__list {
   position: relative;
-}
-
-.results__list::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 7%;
-  border-left: 1px dashed var(--color-white);
-  z-index: -1;
+  margin-top: 1em;
+  padding: 0;
 }
 
 .results-list__year {
@@ -228,8 +208,8 @@ ul {
   }
   .title-text {
     margin-top: 1em;
-    font-size: 8rem;
-    padding-left: 1.4em;
+    margin-bottom: 0;
+    font-size: 5rem;
   }
 
   .pyramid-img {
@@ -239,8 +219,8 @@ ul {
   }
 
   .section-body {
-    margin-top: 6rem;
-    width: 60%;
+    margin-top: 0;
+    width: 100%;
   }
 
   .results-list__year {
