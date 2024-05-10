@@ -131,12 +131,37 @@ ul {
   margin-top: 2.5em;
   position: relative;
 }
-.title-text-coaching {
-  font-family: "Raleway", sans-serif;
+.title-text {
+  font-family: var(--raleway-font);
+  font-weight: 800;
+  text-shadow: #2f3640 2px 2px 5px;
+  margin-top: 1.5em;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.status-box-text {
+  font-family: var(--raleway-font);
+  font-size: 1.5rem;
   font-weight: 500;
-  font-size: 3rem;
-  letter-spacing: 6px;
-  text-shadow: #2f3640 1px 1px 5px;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.application-text-box {
+  position: relative;
+}
+
+.app-link-text {
+  font-size: var(--roboto-font);
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--color-white);
 }
 
 .preface-hero {
